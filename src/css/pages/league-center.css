@@ -1,0 +1,184 @@
+.league-menu .tit {
+  display: flex;
+}
+
+.league-menu .tit h2 {
+  margin-left: 10px;
+}
+
+.table-wrap.league-ranking ul.tbody li {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.table-wrap.league-ranking ul.tbody li .tm .team-logo {
+  width: 32px;
+  height: 32px;
+}
+
+.table-wrap.league-ranking ul.tbody li img {
+  width: 36px;
+}
+
+.table-wrap.league-ranking ul.tbody li:nth-child(-n + 4)::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  left: 0;
+  height: 100%;
+  background: var(--primary);
+}
+
+.table-wrap.league-ranking ul {
+  min-width: 1340px;
+}
+
+.table-wrap.league-ranking
+  ul.tbody
+  li:nth-child(n + 5):nth-child(-n + 7)::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  left: 0;
+  height: 100%;
+  background: #13a24f;
+}
+
+.table-wrap.league-ranking ul.thead li {
+  text-align: center;
+}
+
+.table-wrap.league-ranking ul.thead li.rk {
+  text-align: left;
+}
+
+.table-wrap.league-ranking ul.thead li.tm {
+  text-align: left;
+}
+
+.table-wrap.league-ranking ul.tbody li div.rk {
+  justify-content: flex-start;
+}
+
+.table-wrap.league-ranking ul.tbody li div.tm {
+  justify-content: flex-start;
+}
+
+.table-wrap.league-ranking ul.tbody li:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  border-bottom: 2px dashed var(--primary);
+  transition: width 0.5s;
+}
+
+.table-wrap.league-ranking ul.tbody li {
+  padding: 16px 0;
+}
+
+.table-wrap.league-ranking ul.tbody li div {
+  justify-content: center;
+}
+
+/* 공통 스타일 */
+.table-wrap.league-ranking .rk {
+  width: 7.64%;
+}
+
+.table-wrap.league-ranking .tm {
+  width: 18.06%;
+}
+
+.table-wrap.league-ranking .mp {
+  width: 6.25%;
+}
+
+.table-wrap.league-ranking .w {
+  width: 6.25%;
+}
+
+.table-wrap.league-ranking .d {
+  width: 6.25%;
+}
+
+.table-wrap.league-ranking .l {
+  width: 6.25%;
+}
+
+.table-wrap.league-ranking .gf {
+  width: 6.25%;
+}
+
+.table-wrap.league-ranking .ga {
+  width: 6.25%;
+}
+
+.table-wrap.league-ranking .gd {
+  width: 6.25%;
+}
+
+.table-wrap.league-ranking .next {
+  width: 6.25%;
+}
+
+.table-wrap.league-ranking .form {
+  width: 17.36%;
+  text-align: center;
+}
+
+.table-wrap.league-ranking .pts {
+  width: 6.94%;
+}
+
+/* tbody의 rk만 추가 스타일 */
+.table-wrap.league-ranking .tbody .team .rk {
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .table-wrap.league-ranking ul {
+    min-width: 1024px;
+  }
+}
+
+/* 모바일 (768px 이하) */
+@media (max-width: 767px) {
+  .league-ranking .d {
+    width: 8%;
+  }
+
+  .league-ranking .l {
+    width: 8%;
+  }
+
+  .league-ranking .gf {
+    width: 8%;
+  }
+
+  .league-ranking .ga {
+    width: 8%;
+  }
+
+  .league-ranking .gd {
+    width: 8%;
+  }
+
+  .league-ranking .next {
+    width: 8%;
+  }
+
+  .league-ranking .form {
+    width: 30%; /* 폼을 더 넓게 */
+    text-align: center;
+  }
+
+  .league-ranking .pts {
+    width: 10%; /* 승점을 더 강조 */
+  }
+
+  .table-wrap.league-ranking ul.tbody li img {
+    width: 32px;
+  }
+}

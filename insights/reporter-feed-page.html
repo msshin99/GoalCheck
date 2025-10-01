@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/css/base/reset.css" />
+    <link rel="stylesheet" href="../src/css/base/variables.css" />
+    <link rel="stylesheet" href="../src/css/base/layout.css" />
+    <link rel="stylesheet" href="../src/css/components/button.css" />
+    <link rel="stylesheet" href="../src/css/components/card.css" />
+    <link rel="stylesheet" href="../src/css/pages/main.css" />
+    <link rel="stylesheet" href="../src/css/pages/insights.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="../src/js/include.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="../src/js/pages/main.js" type="module"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header data-include-file="../layout/header.html"></header>
+    <div class="sub-inner">
+      <div class="news-table">
+        <h2 class="section-title">보고싶은 기자들의 소식만 골라보든 소식</h2>
+        <div class="menu">
+          <ul class="select-tab">
+            <li tabindex="0">
+              <div class="left">
+                <span
+                  ><svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11 18C11 18 10 18 10 17C10 16 11 13 15 13C19 13 20 16 20 17C20 18 19 18 19 18H11ZM15 12C15.7956 12 16.5587 11.6839 17.1213 11.1213C17.6839 10.5587 18 9.79565 18 9C18 8.20435 17.6839 7.44129 17.1213 6.87868C16.5587 6.31607 15.7956 6 15 6C14.2044 6 13.4413 6.31607 12.8787 6.87868C12.3161 7.44129 12 8.20435 12 9C12 9.79565 12.3161 10.5587 12.8787 11.1213C13.4413 11.6839 14.2044 12 15 12ZM9.216 18C9.06782 17.6878 8.9939 17.3455 9 17C9 15.645 9.68 14.25 10.936 13.28C10.3092 13.0864 9.65598 12.992 9 13C5 13 4 16 4 17C4 18 5 18 5 18H9.216ZM8.5 12C9.16304 12 9.79893 11.7366 10.2678 11.2678C10.7366 10.7989 11 10.163 11 9.5C11 8.83696 10.7366 8.20107 10.2678 7.73223C9.79893 7.26339 9.16304 7 8.5 7C7.83696 7 7.20107 7.26339 6.73223 7.73223C6.26339 8.20107 6 8.83696 6 9.5C6 10.163 6.26339 10.7989 6.73223 11.2678C7.20107 11.7366 7.83696 12 8.5 12Z"
+                      fill="#B0B8C1"
+                    ></path>
+                  </svg>
+                </span>
+                <p>관심 있는 기자를 선택해 보세요</p>
+              </div>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.6667 6.66634L10 13.333L3.33337 6.66634"
+                  stroke="#6B7684"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <div class="radio-box">
+                <ul>
+                  <li>파브리지오 로마노</li>
+                  <li>사이먼 스톤</li>
+                  <li>맷 로</li>
+                  <li>로리 휘트웰</li>
+                  <li>제임스 피어스</li>
+                  <li>라파엘 호닉슈타인</li>
+                  <li>크리스토퍼 테루어</li>
+                  <li>제이콥 스타인버그</li>
+                  <li>사이먼 휴즈</li>
+                  <li>모하메드 부합시</li>
+                  <li>크리스 바스콤</li>
+                  <li>도미닉 킹</li>
+                  <li>니자르 킨셀라</li>
+                </ul>
+              </div>
+            </li>
+            <li tabindex="1">
+              <div class="left">
+                <span
+                  ><svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.55 5.17251C12.3881 5.06014 12.1963 5 12 5C11.8037 5 11.6119 5.06014 11.45 5.17251L11.0171 5.47189C9.91218 6.238 8.63517 6.71191 7.30265 6.85035C7.08194 6.87397 6.87773 6.97953 6.72948 7.14661C6.58123 7.31369 6.49947 7.53044 6.5 7.75496V11.2944C6.5 13.1187 7.44742 14.7786 8.48 16.0544C9.52039 17.3417 10.7056 18.3102 11.3024 18.7632C11.5033 18.9169 11.7482 19 12 19C12.2518 19 12.4967 18.9169 12.6976 18.7632C13.2945 18.3109 14.4796 17.3417 15.52 16.0552C16.5526 14.7786 17.5 13.1187 17.5 11.2952V7.75424C17.5 7.29476 17.1608 6.89702 16.6974 6.84963C15.3648 6.7112 14.0878 6.23729 12.9829 5.47117L12.55 5.17251Z"
+                      fill="#B0B8C1"
+                    ></path>
+                  </svg>
+                </span>
+                <p>선호하는 구단을 선택해 보세요</p>
+              </div>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.6667 6.66634L10 13.333L3.33337 6.66634"
+                  stroke="#6B7684"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <div class="radio-box">
+                <ul>
+                  <li>리버풀</li>
+                  <li>멘체스터 시티</li>
+                  <li>아스날</li>
+                  <li>멘체스터 시티</li>
+                  <li>첼시</li>
+                  <li>아스톤 빌라</li>
+                  <li>뉴캐슬</li>
+                  <li>레알 마드리드</li>
+                  <li>바르셀로나</li>
+                  <li>아틀레티코 마드리드</li>
+                  <li>바이에른 뮌헨</li>
+                  <li>도르트문트</li>
+                  <li>파리 셍제르망</li>
+                </ul>
+              </div>
+            </li>
+            <li tabindex="2">
+              <div class="left">
+                <span
+                  ><svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.4897 16.9C14.0662 16.9 14.3708 17.6168 13.9863 18.0676C13.7362 18.3609 13.4301 18.5956 13.0878 18.7563C12.7456 18.9169 12.3749 19 12 19C11.6251 19 11.2545 18.9169 10.9122 18.7563C10.57 18.5956 10.2638 18.3609 10.0138 18.0676C9.64584 17.6364 9.90845 16.9623 10.4363 16.9049L10.5097 16.9007L13.4897 16.9ZM12 5C12.9052 5 13.6703 5.6321 13.9163 6.4987L13.9469 6.6184L13.9523 6.6485C14.6871 7.0837 15.3134 7.6956 15.7796 8.43406C16.2458 9.17251 16.5387 10.0165 16.6344 10.8968L16.653 11.0977L16.6657 11.3V13.3517L16.6797 13.4469C16.771 13.9627 17.0427 14.4239 17.4415 14.7398L17.5528 14.8217L17.6608 14.891C18.234 15.2319 18.0341 16.1272 17.4095 16.1958L17.3322 16.2H6.66779C5.9826 16.2 5.74332 15.2452 6.3392 14.891C6.59316 14.7401 6.81259 14.5326 6.98209 14.2831C7.15158 14.0336 7.26703 13.7482 7.32032 13.4469L7.33432 13.3468L7.33499 11.2678C7.37563 10.3535 7.62903 9.46363 8.07302 8.67603C8.51701 7.88843 9.13805 7.22712 9.88179 6.75L10.0471 6.6478L10.0538 6.6177C10.1478 6.19898 10.362 5.82069 10.6674 5.53399C10.9728 5.24729 11.3547 5.06602 11.7614 5.0147L11.8827 5.0028L12 5Z"
+                      fill="#B0B8C1"
+                    ></path>
+                  </svg>
+                </span>
+                <p>분야별 기사를 선택해 보세요</p>
+              </div>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.6667 6.66634L10 13.333L3.33337 6.66634"
+                  stroke="#6B7684"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <div class="radio-box">
+                <ul>
+                  <li>이적 및 계약 소식</li>
+                  <li>선수 인터뷰</li>
+                  <li>선수 기록 및 스탯</li>
+                  <li>감독·코치 발언</li>
+                  <li>리그 운영 소식</li>
+                  <li>심판·VAR 이슈</li>
+                  <li>응원 문화 &amp; 이벤트</li>
+                  <li>글로벌 인터뷰</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <ul class="table">
+          <li>
+            <div class="content">
+              <figure class="logo-img">
+                <img src="../img/profile-logo/media-01.jpg" alt="" />
+              </figure>
+              <div class="txt">
+                <h5 class="tit">
+                  맨체스터 유나이티드가 후벵 아모림 체제를 유지할 계획이다.
+                  저조한 성적에도 불구하고 경질 이야기는 나오지 않고 있다.
+                </h5>
+                <div class="sub">
+                  <p class="info">
+                    <span>인물</span>
+                    <span>후뱅 아모림</span>
+                  </p>
+                  <p class="info">
+                    <span>날짜</span>
+                    <span>10분전</span>
+                  </p>
+                  <p class="info">
+                    <span>기사유형</span>
+                    <span>감독 경질설</span>
+                  </p>
+                  <div class="chart-wrap">
+                    <span>공신력</span>
+                    <div class="bar-bg">
+                      <div class="bar per-100"></div>
+                    </div>
+                    <span class="percent">100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="view-more">바로가기</a>
+          </li>
+          <li>
+            <div class="content">
+              <figure class="logo-img">
+                <img src="../img/profile-logo/media-01.jpg" alt="" />
+              </figure>
+              <div class="txt">
+                <h5 class="tit">
+                  맨체스터 유나이티드가 후벵 아모림 체제를 유지할 계획이다.
+                  저조한 성적에도 불구하고 경질 이야기는 나오지 않고 있다.
+                </h5>
+                <div class="sub">
+                  <p class="info">
+                    <span>인물</span>
+                    <span>후뱅 아모림</span>
+                  </p>
+                  <p class="info">
+                    <span>날짜</span>
+                    <span>10분전</span>
+                  </p>
+                  <p class="info">
+                    <span>기사유형</span>
+                    <span>감독 경질설</span>
+                  </p>
+                  <div class="chart-wrap">
+                    <span>공신력</span>
+                    <div class="bar-bg">
+                      <div class="bar per-80"></div>
+                    </div>
+                    <span class="percent">100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="view-more">바로가기</a>
+          </li>
+          <li>
+            <div class="content">
+              <figure class="logo-img">
+                <img src="../img/profile-logo/media-01.jpg" alt="" />
+              </figure>
+              <div class="txt">
+                <h5 class="tit">
+                  맨체스터 유나이티드가 후벵 아모림 체제를 유지할 계획이다.
+                  저조한 성적에도 불구하고 경질 이야기는 나오지 않고 있다.
+                </h5>
+                <div class="sub">
+                  <p class="info">
+                    <span>인물</span>
+                    <span>후뱅 아모림</span>
+                  </p>
+                  <p class="info">
+                    <span>날짜</span>
+                    <span>10분전</span>
+                  </p>
+                  <p class="info">
+                    <span>기사유형</span>
+                    <span>감독 경질설</span>
+                  </p>
+                  <div class="chart-wrap">
+                    <span>공신력</span>
+                    <div class="bar-bg">
+                      <div class="bar per-60"></div>
+                    </div>
+                    <span class="percent">100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="view-more">바로가기</a>
+          </li>
+          <li>
+            <div class="content">
+              <figure class="logo-img">
+                <img src="../img/profile-logo/media-01.jpg" alt="" />
+              </figure>
+              <div class="txt">
+                <h5 class="tit">
+                  맨체스터 유나이티드가 후벵 아모림 체제를 유지할 계획이다.
+                  저조한 성적에도 불구하고 경질 이야기는 나오지 않고 있다.
+                </h5>
+                <div class="sub">
+                  <p class="info">
+                    <span>인물</span>
+                    <span>후뱅 아모림</span>
+                  </p>
+                  <p class="info">
+                    <span>날짜</span>
+                    <span>10분전</span>
+                  </p>
+                  <p class="info">
+                    <span>기사유형</span>
+                    <span>감독 경질설</span>
+                  </p>
+                  <div class="chart-wrap">
+                    <span>공신력</span>
+                    <div class="bar-bg">
+                      <div class="bar per-40"></div>
+                    </div>
+                    <span class="percent">100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="view-more">바로가기</a>
+          </li>
+          <li>
+            <div class="content">
+              <figure class="logo-img">
+                <img src="../img/profile-logo/media-01.jpg" alt="" />
+              </figure>
+              <div class="txt">
+                <h5 class="tit">
+                  맨체스터 유나이티드가 후벵 아모림 체제를 유지할 계획이다.
+                  저조한 성적에도 불구하고 경질 이야기는 나오지 않고 있다.
+                </h5>
+                <div class="sub">
+                  <p class="info">
+                    <span>인물</span>
+                    <span>후뱅 아모림</span>
+                  </p>
+                  <p class="info">
+                    <span>날짜</span>
+                    <span>10분전</span>
+                  </p>
+                  <p class="info">
+                    <span>기사유형</span>
+                    <span>감독 경질설</span>
+                  </p>
+                  <div class="chart-wrap">
+                    <span>공신력</span>
+                    <div class="bar-bg">
+                      <div class="bar per-20"></div>
+                    </div>
+                    <span class="percent">100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="view-more">바로가기</a>
+          </li>
+          <li>
+            <div class="content">
+              <figure class="logo-img">
+                <img src="../img/profile-logo/media-01.jpg" alt="" />
+              </figure>
+              <div class="txt">
+                <h5 class="tit">
+                  맨체스터 유나이티드가 후벵 아모림 체제를 유지할 계획이다.
+                  저조한 성적에도 불구하고 경질 이야기는 나오지 않고 있다.
+                </h5>
+                <div class="sub">
+                  <p class="info">
+                    <span>인물</span>
+                    <span>후뱅 아모림</span>
+                  </p>
+                  <p class="info">
+                    <span>날짜</span>
+                    <span>10분전</span>
+                  </p>
+                  <p class="info">
+                    <span>기사유형</span>
+                    <span>감독 경질설</span>
+                  </p>
+                  <div class="chart-wrap">
+                    <span>공신력</span>
+                    <div class="bar-bg">
+                      <div class="bar per-20"></div>
+                    </div>
+                    <span class="percent">100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="view-more">바로가기</a>
+          </li>
+          <li>
+            <div class="content">
+              <figure class="logo-img">
+                <img src="../img/profile-logo/media-01.jpg" alt="" />
+              </figure>
+              <div class="txt">
+                <h5 class="tit">
+                  맨체스터 유나이티드가 후벵 아모림 체제를 유지할 계획이다.
+                  저조한 성적에도 불구하고 경질 이야기는 나오지 않고 있다.
+                </h5>
+                <div class="sub">
+                  <p class="info">
+                    <span>인물</span>
+                    <span>후뱅 아모림</span>
+                  </p>
+                  <p class="info">
+                    <span>날짜</span>
+                    <span>10분전</span>
+                  </p>
+                  <p class="info">
+                    <span>기사유형</span>
+                    <span>감독 경질설</span>
+                  </p>
+                  <div class="chart-wrap">
+                    <span>공신력</span>
+                    <div class="bar-bg">
+                      <div class="bar per-20"></div>
+                    </div>
+                    <span class="percent">100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="view-more">바로가기</a>
+          </li>
+          <li>
+            <div class="content">
+              <figure class="logo-img">
+                <img src="../img/profile-logo/media-01.jpg" alt="" />
+              </figure>
+              <div class="txt">
+                <h5 class="tit">
+                  맨체스터 유나이티드가 후벵 아모림 체제를 유지할 계획이다.
+                  저조한 성적에도 불구하고 경질 이야기는 나오지 않고 있다.
+                </h5>
+                <div class="sub">
+                  <p class="info">
+                    <span>인물</span>
+                    <span>후뱅 아모림</span>
+                  </p>
+                  <p class="info">
+                    <span>날짜</span>
+                    <span>10분전</span>
+                  </p>
+                  <p class="info">
+                    <span>기사유형</span>
+                    <span>감독 경질설</span>
+                  </p>
+                  <div class="chart-wrap">
+                    <span>공신력</span>
+                    <div class="bar-bg">
+                      <div class="bar per-20"></div>
+                    </div>
+                    <span class="percent">100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="view-more">바로가기</a>
+          </li>
+          <li>
+            <div class="content">
+              <figure class="logo-img">
+                <img src="../img/profile-logo/media-01.jpg" alt="" />
+              </figure>
+              <div class="txt">
+                <h5 class="tit">
+                  맨체스터 유나이티드가 후벵 아모림 체제를 유지할 계획이다.
+                  저조한 성적에도 불구하고 경질 이야기는 나오지 않고 있다.
+                </h5>
+                <div class="sub">
+                  <p class="info">
+                    <span>인물</span>
+                    <span>후뱅 아모림</span>
+                  </p>
+                  <p class="info">
+                    <span>날짜</span>
+                    <span>10분전</span>
+                  </p>
+                  <p class="info">
+                    <span>기사유형</span>
+                    <span>감독 경질설</span>
+                  </p>
+                  <div class="chart-wrap">
+                    <span>공신력</span>
+                    <div class="bar-bg">
+                      <div class="bar per-20"></div>
+                    </div>
+                    <span class="percent">100%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="view-more">바로가기</a>
+          </li>
+        </ul>
+        <a href="#" class="more">더보기</a>
+      </div>
+    </div>
+    <div class="footer-bg">
+      <footer data-include-file="../layout/footer.html"></footer>
+    </div>
+  </body>
+</html>

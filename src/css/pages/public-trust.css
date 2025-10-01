@@ -1,0 +1,228 @@
+.menu.trust {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.menu.trust .tab-list {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: min-content;
+}
+
+.menu.trust .tab-list li {
+  flex-shrink: 0;
+}
+
+.table-wrap.trust ul .order {
+  width: 4%;
+}
+.table-wrap.trust ul .report {
+  width: 15%;
+}
+.table-wrap.trust ul .media {
+  width: 13%;
+}
+.table-wrap.trust ul .team {
+  width: 13%;
+}
+.table-wrap.trust ul .field {
+  width: 28%;
+}
+.table-wrap.trust ul .trust {
+  width: 17%;
+}
+.table-wrap.trust ul .btn {
+  width: 10%;
+}
+
+.table-wrap p.trust ul.thead li:first-child {
+  padding-left: 16px;
+  text-align: center;
+}
+
+.table-wrap.trust ul.tbody li div:first-child {
+  padding-left: 16px;
+}
+
+.table-wrap.trust ul.tbody li {
+  font-size: 14px;
+  line-height: 22px;
+  width: 100%;
+}
+
+.table-wrap ul.tbody li div {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: var(--regular);
+  color: var(--primary-txt);
+}
+
+.table-wrap.trust ul.tbody li:hover {
+  background: #fff;
+}
+
+.table-wrap.trust ul.thead li.btn {
+  text-align: center;
+}
+
+.table-wrap.trust ul.tbody li div.btn {
+  justify-content: center;
+}
+
+.table-wrap.trust ul.tbody li div.field {
+  gap: 8px;
+}
+
+.table-wrap.trust ul.tbody li div.field span {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: var(--medium);
+  color: var(--primary-txt);
+  border-radius: 50px;
+  border: 1px solid var(--border);
+  padding: 6px 14px;
+}
+
+@media (max-width: 1024px) {
+  .table-wrap.trust ul.thead {
+    display: none;
+  }
+
+  .table-wrap.trust ul .order {
+    width: fit-content;
+    margin: 0 10px 12px 0 !important;
+  }
+
+  .table-wrap.trust ul .report {
+    width: 96%;
+    order: 1;
+    display: block;
+    margin: 0 0 14px 0 !important;
+  }
+
+  .table-wrap.trust ul .media {
+    position: relative;
+    width: fit-content;
+    order: 2;
+    margin-left: 32px;
+  }
+
+  .table-wrap.trust ul .media::before {
+    position: absolute;
+    content: "언론";
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: var(--regular);
+    color: var(--tertiary-txt);
+    left: -32px;
+  }
+
+  .table-wrap.trust ul .team {
+    position: relative;
+    width: fit-content;
+    order: 3;
+    margin-left: 84px;
+  }
+
+  .table-wrap.trust ul .team::before {
+    position: relative;
+    content: "담당 구단 리그";
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: var(--regular);
+    color: var(--tertiary-txt);
+    left: -86px;
+  }
+
+  .table-wrap.trust ul .field {
+    width: fit-content;
+    order: 4;
+  }
+
+  .table-wrap.trust ul .trust {
+    width: 100%;
+    order: 5;
+    display: block;
+    margin-top: 4px;
+    margin-left: 46px;
+    margin-right: 0 !important;
+  }
+
+  .table-wrap.trust ul .trust::before {
+    position: relative;
+    content: "공신력";
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: var(--regular);
+    color: var(--tertiary-txt);
+    left: -46px;
+  }
+
+  .table-wrap.trust ul .trust .chart-wrap {
+    width: 100%;
+  }
+
+  .table-wrap.trust ul .trust .chart-wrap .bar-bg {
+    width: 100%;
+  }
+
+  .table-wrap.trust ul .btn {
+    width: 100%;
+    order: 6;
+    margin-top: 14px;
+  }
+
+  .table-wrap.trust ul .btn a.view-more {
+    width: 100%;
+  }
+
+  .table-wrap.trust ul.tbody li div.field span {
+    padding: 4px 12px;
+  }
+
+  .table-wrap.trust ul.tbody li {
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+    padding: 14px 0;
+  }
+  .table-wrap.trust ul.tbody li .list {
+    position: relative;
+    font-weight: var(--medium);
+    margin-right: 24px;
+  }
+
+  .table-wrap.trust ul.tbody li div.btn {
+    margin-right: 0;
+  }
+
+  .table-wrap.trust ul.tbody li .list::before {
+    position: absolute;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: var(--regular);
+    color: var(--tertiary-txt);
+  }
+
+  .table-wrap.trust ul.tbody li div:first-child {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .table-wrap.trust ul.tbody li {
+    gap: 6px 0;
+  }
+
+  .table-wrap.trust ul .report {
+    width: 90%;
+    margin: 0 0 6px 0 !important;
+  }
+
+  .table-wrap.trust ul.tbody li div.btn {
+    margin-top: 8px;
+    margin-right: 0;
+  }
+}

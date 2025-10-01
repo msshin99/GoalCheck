@@ -1,0 +1,120 @@
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-wrap ul.thead {
+  display: flex;
+}
+
+.table-wrap ul.thead li {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: var(--regular);
+  background: var(--default-background);
+  color: var(--secondary-txt);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;
+}
+
+.table-wrap ul.thead li:first-child {
+  padding-left: 16px;
+}
+
+.table-wrap ul.tbody li {
+  font-weight: var(--regular);
+  color: var(----primary-txt);
+  display: flex;
+  transition: all 0.5s ease;
+  position: relative;
+  align-items: center;
+  padding: 22px 0;
+}
+
+.table-wrap ul.thead li:first-child {
+  border-radius: 12px 0 0 0;
+}
+
+.table-wrap ul.thead li:last-child {
+  border-radius: 0 12px 0 0;
+}
+
+.table-wrap ul.tbody li:nth-child(4):hover::after {
+  width: 100%;
+}
+
+.table-wrap ul.tbody li:hover {
+  background: var(--default-background);
+}
+
+.table-wrap ul.tbody li div {
+  display: flex;
+  align-items: center;
+}
+
+.table-wrap ul.tbody li div.trust .chart-wrap {
+  padding-left: 0;
+}
+
+.table-wrap ul.tbody li div.trust .chart-wrap .bar-bg {
+  padding-left: 0;
+}
+
+.table-wrap ul.tbody li div:first-child {
+  padding-left: 16px;
+}
+
+.table-wrap ul.tbody li div.tm {
+  justify-content: flex-start;
+}
+
+.table-wrap ul.tbody li div.rk {
+  gap: 28px;
+  justify-content: flex-start;
+}
+
+.table-wrap ul.tbody li div.tm,
+.form {
+  gap: 8px;
+}
+
+.table-wrap ul.tbody li div.form span {
+  font-size: 13px;
+  line-height: 20px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border);
+  color: var(--tertiary-txt);
+  border-radius: 4px;
+  background: #fff;
+}
+
+.table-wrap ul.tbody li div.form span.win {
+  color: #13a24f;
+  border: 1px solid #13a24f;
+  background: #fff;
+}
+
+.table-wrap ul.tbody li div.form span.lose {
+  color: #e51b24;
+  border: 1px solid #e51b24;
+}
+
+.table-wrap ul.tbody li div.pts {
+  color: var(--primary);
+  font-weight: var(--bold);
+}
+
+@media (max-width: 767px) {
+  .table-wrap ul.tbody li div.rk {
+    gap: 16px;
+  }
+
+  .table-wrap ul.tbody li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

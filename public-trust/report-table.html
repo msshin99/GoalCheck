@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/css/base/reset.css" />
+    <link rel="stylesheet" href="../src/css/base/variables.css" />
+    <link rel="stylesheet" href="../src/css/base/layout.css" />
+    <link rel="stylesheet" href="../src/css/components/button.css" />
+    <link rel="stylesheet" href="../src/css/components/card.css" />
+    <link rel="stylesheet" href="../src/css/pages/main.css" />
+    <link rel="stylesheet" href="../src/css/pages/insights.css" />
+    <link rel="stylesheet" href="../src/css/pages/public-trust.css" />
+    <link rel="stylesheet" href="../src/css/components/table.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="../src/js/components/report.js" type="module"></script>
+    <script src="../src/js/include.js" type="module"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header data-include-file="../layout/header.html"></header>
+
+    <div class="sub-inner">
+      <h2 class="section-title">해외 축구 기자들의 공신력 등급</h2>
+      <div class="menu trust">
+        <ul class="tab-list">
+          <li><button class="on">디 애슬레틱</button></li>
+          <li><button>BBC</button></li>
+          <li><button>스카이 스포츠</button></li>
+          <li><button>텔레그래프</button></li>
+          <li><button>PA</button></li>
+          <li><button>가디언</button></li>
+          <li><button>타임즈</button></li>
+          <li><button>ESPN</button></li>
+          <li><button>데일리 메일</button></li>
+          <li><button>인디펜던트</button></li>
+          <li><button>풋볼 인사이더</button></li>
+          <li><button>더 선</button></li>
+        </ul>
+      </div>
+      <div class="table-wrap trust">
+        <ul class="thead">
+          <li class="order">#</li>
+          <li class="report">기자이름</li>
+          <li class="media">언론매체</li>
+          <li class="team">담당 구단 리그</li>
+          <li class="field">비고 및 역할</li>
+          <li class="trust">공신력</li>
+          <li class="btn">프로필 버튼</li>
+        </ul>
+        <ul class="tbody">
+          <!-- -----js 데이터------ -->
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bg">
+      <footer data-include-file="../layout/footer.html"></footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,289 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.menu.mr2 {
+  margin-bottom: 2px;
+}
+
+.menu ul.tab-list {
+  display: flex;
+  gap: 12px;
+}
+
+.menu ul.tab-list li button {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.35px;
+  font-weight: var(--medium);
+  color: var(--tertiary-txt);
+  padding: 10px 18px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.menu ul.tab-list li button.on {
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  color: #fff;
+}
+
+.menu ul.tab-list li button.on:hover {
+  background: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.menu ul.tab-list li button:hover {
+  background: var(--default-background);
+}
+
+.menu .controls {
+  display: flex;
+  gap: 12px;
+}
+
+.menu .controls button {
+  cursor: pointer;
+}
+
+.menu form {
+  width: calc(100% / 4);
+}
+
+.menu form select {
+  width: 100%;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: var(--regular);
+  color: var(--primary-txt);
+  padding: 12px 6px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.menu p.view-toggle {
+  display: flex;
+}
+
+.menu p.view-toggle a {
+  transition: all 0.5s ease;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.menu p.view-toggle a.on svg rect {
+  fill: var(--primary);
+}
+
+.menu p.view-toggle a:hover {
+  background: var(--default-background);
+}
+
+a.more {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: var(--medium);
+  letter-spacing: -0.35px;
+  color: var(--tertiary-txt);
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  width: 180px;
+  border: 1px solid var(--border);
+  padding: 14px 10px;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+  display: block;
+}
+
+a.more:hover {
+  background: var(--primary-txt);
+  color: #fff;
+}
+
+a.moreB {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: var(--medium);
+  letter-spacing: -0.35px;
+  color: var(--tertiary-txt);
+  background: var(--default-background);
+  width: 100px;
+  padding: 12px 0;
+  text-align: center;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+}
+
+a.moreB:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+a.view-more {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: var(--medium);
+  color: var(--tertiary-txt);
+  border-radius: 4px;
+  background-color: var(--default-background);
+  height: fit-content;
+  transition: all 0.5s ease;
+  width: 80px;
+  text-align: center;
+  padding: 12px 10px;
+  display: block;
+}
+
+a.view-more:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+a.sub-btn {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: var(--medium);
+  color: #fff;
+  background: var(--primary-txt);
+  border-radius: 6px;
+  float: right;
+  clear: both;
+  padding: 16px 39px;
+  border: 1px solid var(--primary-txt);
+  transition: all 0.5s ease;
+}
+
+.sub-btn-wrap {
+  overflow: hidden;
+}
+
+a.sub-btn:hover {
+  color: var(--primary-txt);
+  background: #fff;
+  border: 1px solid var(--primary-txt);
+  color: var(--primary-txt);
+}
+
+/* -----테블렛------- */
+
+@media (max-width: 1024px) {
+  .menu {
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  .menu ul.tab-list {
+    gap: 10px;
+  }
+
+  .menu .controls {
+    gap: 10px;
+  }
+
+  .menu ul.tab-list li button {
+    padding: 8px 16px;
+  }
+  a.more {
+    width: 140px;
+    padding: 10px;
+  }
+
+  a.moreB {
+    width: 90px;
+    padding: 10px 0;
+  }
+
+  a.view-more {
+    width: 80px;
+    padding: 10px 4px;
+  }
+
+  .menu p.view-toggle a svg {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+/* -----모바일------- */
+
+@media (max-width: 767px) {
+  .menu {
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .menu ul.tab-list {
+    gap: 6px;
+  }
+
+  .menu .controls {
+    gap: 6px;
+  }
+
+  .menu ul.tab-list li button {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+  a.more {
+    width: 100%;
+    padding: 8px 0;
+  }
+
+  a.view-more {
+    width: 100%;
+    padding: 8px 0;
+  }
+
+  a.sub-btn {
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+  }
+}
+
+.chart-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.chart-wrap span {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: var(--regular);
+  color: var(--tertiary-txt);
+  margin-right: 12px;
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+}
+
+.rate span {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: var(--regular);
+  color: var(--tertiary-txt);
+  margin-right: 12px;
+  display: inline-block;
+}
+
+.rate ul {
+  display: flex;
+  gap: 6px;
+}
+
+.rate ul li.on svg path {
+  fill: var(--primary);
+}
+
+.rate ul li.on svg rect {
+  stroke: var(--primary);
+}
