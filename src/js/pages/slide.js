@@ -90,7 +90,7 @@ const profileList = new Swiper(".profile-list", {
   spaceBetween: 24,
   loop: true,
   centeredSlides: false,
-  loopAdditionalSlides: 2,
+  loopAdditionalSlides: 0,
   slidesOffsetBefore: 0,
   pagination: {
     el: ".swiper-pagination",

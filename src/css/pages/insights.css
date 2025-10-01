@@ -607,6 +607,7 @@ article .view-content ul.hashtag li:hover {
   line-height: 1.4; /* (선택) 줄높이 - 정확한 계산 위해 지정 권장 */
   max-height: calc(1.4em * 2); /* (선택) 안전장치: 2줄 높이로 제한 */
   word-break: break-word; /* 긴 단어 강제 줄바꿈 처리 */
+  width: 94%;
 }
 
 @media (max-width: 1024px) {
