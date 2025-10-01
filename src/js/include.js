@@ -30,17 +30,30 @@ document.addEventListener("DOMContentLoaded", function () {
           currentPath.endsWith("/"); // 폴더명으로 접근 (예: https://user.github.io/repo-name/insights/)
 
         if (!isMainPage) {
-          // 서브페이지: 경로의 깊이를 계산하여 `../` 반복 횟수를 구합니다.
-          // 예: /insights/gridpage.html → split("/") 하면 ["", "insights", "gridpage.html"] (길이 3)
-          // 루트와 파일명을 제외한 폴더 개수 = 길이 - 2
+          // 서브페이지: 경로의 깊이를 계산합니다.
+          
+          // 경로를 슬래시로 분리하고 빈 문자열을 제거합니다.
+          // 예: /GOALCHECK/insights/gridpage.html → ["GOALCHECK", "insights", "gridpage.html"]
           const pathSegments = currentPath.split("/").filter(segment => segment.length > 0);
           
-          // 파일명을 제외한 경로 깊이. (URL이 /repo-name/insights/gridpage.html 일 때, 파일명 앞의 폴더 개수)
-          // 깃허브 페이지에서는 `/`가 루트가 아니라 `/repo-name/`이 루트가 될 수 있으므로,
-          // 실제 파일 경로를 기준으로 계산해야 합니다.
-          // 일반적인 웹서버에서처럼 `/`을 기준으로 서브 페이지의 폴더 깊이만 계산합니다.
-          // /insights/gridpage.html → depth = 1 (segments: [insights, gridpage.html])
-          const depth = pathSegments.length - 1; 
+          // 깃허브 페이지의 URL 구조를 고려하여 깊이를 계산합니다.
+          // 보통 URL 구조는 /repository-name/path/to/file.html 입니다.
+          // 경로 깊이 = (전체 세그먼트 수) - (리포지토리 이름) - (현재 파일명)
+          
+          // 'GOALCHECK'가 리포지토리 이름이라고 가정합니다.
+          // pathSegments.length는 현재 파일명을 포함한 세그먼트 개수입니다.
+          
+          let segmentCount = pathSegments.length;
+          let depth = 0;
+          
+          if (segmentCount > 0) {
+              // 리포지토리 이름 세그먼트 (예: GOALCHECK) 1개를 제외합니다.
+              // 그리고 현재 페이지 파일명 세그먼트 1개를 제외합니다.
+              // 남는 것이 서브 폴더의 깊이입니다.
+              // 예: /GOALCHECK/insights/gridpage.html (3개) -> 깊이: 3 - 2 = 1
+              // 예: /GOALCHECK/index.html (2개) -> 깊이: 2 - 2 = 0 (isMainPage에서 걸러지나 안전장치)
+              depth = segmentCount - 2; 
+          }
 
           if (depth > 0) {
             prefix = "../".repeat(depth);
