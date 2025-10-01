@@ -18,7 +18,7 @@ header .top .logo {
 }
 
 header .top .logo img {
-  width: 153px;
+  width: 199px;
 }
 
 header .top .right-menu {
@@ -149,7 +149,7 @@ header nav .table-btn:hover {
   }
 
   header .top .logo img {
-    width: 140px;
+    width: 160px;
   }
 
   header nav ul {
@@ -172,7 +172,7 @@ header nav .table-btn:hover {
   }
 
   header .top .logo img {
-    width: 120px;
+    width: 128px;
   }
 
   header nav ul li {
@@ -508,7 +508,7 @@ footer .top {
 }
 
 footer .top h1 img {
-  width: 178px;
+  width: 199px;
 }
 
 footer .top .sns-list {
@@ -635,7 +635,7 @@ footer .bottom .right .family-site select option {
     margin-bottom: 32px;
   }
 
-  footer .top .f-logo svg {
+  footer .top h1 img  {
     width: 160px;
   }
 
@@ -696,6 +696,11 @@ footer .bottom .right .family-site select option {
   footer {
     padding: 0 15px;
   }
+
+  footer .top h1 img  {
+    width: 128px;
+  }
+
 
   footer .top .sns-list a img {
     width: 14px;
