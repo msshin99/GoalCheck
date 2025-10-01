@@ -20,6 +20,7 @@ const newsData = [
   {
     id: "오피셜",
     img: "img/transfer-img/342x192/img-01.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "알렉산더르 이삭",
     time: "5분 전",
     title:
@@ -31,6 +32,7 @@ const newsData = [
   {
     id: "오피셜",
     img: "img/transfer-img/342x192/img-02.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "주앙 패드루",
     time: "5분 전",
     title:
@@ -43,6 +45,7 @@ const newsData = [
   {
     id: "오피셜",
     img: "img/transfer-img/342x192/img-03.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "플로리안 비르츠",
     time: "10분 전",
     title: "이적료 2152억 원' 비르츠, 리버풀 도착 후 곧바로 메디컬 테스트 진행",
@@ -53,6 +56,7 @@ const newsData = [
   {
     id: "오피셜",
     img: "img/transfer-img/342x192/img-04.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "티자니 라인더르스",
     time: "20분 전",
     title:
@@ -64,6 +68,7 @@ const newsData = [
   {
     id: "오피셜",
     img: "img/transfer-img/342x192/img-05.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "리얀 셰르키",
     time: "20분 전",
     title:
@@ -75,6 +80,7 @@ const newsData = [
   {
     id: "오피셜",
     img: "img/transfer-img/342x192/img-06.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "제이미 기튼스",
     time: "20분 전",
     title:
@@ -86,6 +92,7 @@ const newsData = [
   {
     id: "오피셜",
     img: "img/transfer-img/342x192/img-07.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "알레한드로 가르나초",
     time: "20분 전",
     title: "역대급 금쪽이' 가르나초, 맨유→첼시 완료! 이적료 752억+7년 계약완료",
@@ -96,6 +103,7 @@ const newsData = [
   {
     id: "오피셜",
     img: "img/transfer-img/342x192/img-08.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "에베레치 에제",
     time: "20분 전",
     title: "아스날, 진짜 미쳤다! 에제까지 영입 추진→'1130억' 사비뉴와 별개 딜",
@@ -106,6 +114,7 @@ const newsData = [
   {
     id: "오피셜",
     img: "img/transfer-img/342x192/img-09.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "사비 시몬스",
     time: "20분 전",
     title: "사비 시몬스, 토트넘 이적 확정…등번호는 손흥민이 달았던 7번",
@@ -116,6 +125,7 @@ const newsData = [
   {
     id: "오피셜",
     img: "img/transfer-img/342x192/img-10.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "위고 에키티케",
     time: "20분 전",
     title: "레리버풀, 공격수 에키티케 영입…6년 계약+이적료 총액 1465억 원",
@@ -126,6 +136,7 @@ const newsData = [
   {
     id: "오피셜",
     img: "img/transfer-img/342x192/img-11.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "마테우스 쿠냐",
     time: "20분 전",
     title:
@@ -137,6 +148,7 @@ const newsData = [
   {
     id: "오피셜",
     img: "img/transfer-img/342x192/img-12.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -151,6 +163,7 @@ const newsData = [
   {
     id: "거피셜",
     img: "img/transfer-img/342x192/un-img-01.jpg",
+    moon:"img/trust-icon/80.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -162,6 +175,7 @@ const newsData = [
   {
     id: "거피셜",
     img: "img/transfer-img/342x192/un-img-02.jpg",
+    moon:"img/trust-icon/80.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -173,6 +187,7 @@ const newsData = [
   {
     id: "거피셜",
     img: "img/transfer-img/342x192/un-img-03.jpg",
+    moon:"img/trust-icon/80.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -184,6 +199,7 @@ const newsData = [
   {
     id: "거피셜",
     img: "img/transfer-img/342x192/un-img-04.jpg",
+    moon:"img/trust-icon/80.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -195,6 +211,7 @@ const newsData = [
   {
     id: "거피셜",
     img: "img/transfer-img/342x192/un-img-05.jpg",
+    moon:"img/trust-icon/80.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -206,6 +223,7 @@ const newsData = [
   {
     id: "거피셜",
     img: "img/transfer-img/342x192/un-img-06.jpg",
+    moon:"img/trust-icon/80.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -217,6 +235,7 @@ const newsData = [
   {
     id: "거피셜",
     img: "img/transfer-img/342x192/un-img-07.jpg",
+    moon:"img/trust-icon/80.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -228,6 +247,7 @@ const newsData = [
   {
     id: "거피셜",
     img: "img/transfer-img/342x192/un-img-08.jpg",
+    moon:"img/trust-icon/80.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -242,6 +262,7 @@ const newsData = [
   {
     id: "긴급속보",
     img: "img/transfer-img/342x192/em-img-01.jpg",
+    moon:"img/trust-icon/60.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -253,6 +274,7 @@ const newsData = [
   {
     id: "긴급속보",
     img: "img/transfer-img/342x192/em-img-02.jpg",
+    moon:"img/trust-icon/60.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -264,6 +286,7 @@ const newsData = [
   {
     id: "긴급속보",
     img: "img/transfer-img/342x192/em-img-03.jpg",
+    moon:"img/trust-icon/60.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -275,6 +298,7 @@ const newsData = [
   {
     id: "긴급속보",
     img: "img/transfer-img/342x192/em-img-04.jpg",
+    moon:"img/trust-icon/60.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -286,6 +310,7 @@ const newsData = [
   {
     id: "긴급속보",
     img: "img/transfer-img/342x192/em-img-05.jpg",
+    moon:"img/trust-icon/60.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -297,6 +322,7 @@ const newsData = [
   {
     id: "긴급속보",
     img: "img/transfer-img/342x192/em-img-06.jpg",
+    moon:"img/trust-icon/60.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -308,6 +334,7 @@ const newsData = [
   {
     id: "긴급속보",
     img: "img/transfer-img/342x192/em-img-07.jpg",
+    moon:"img/trust-icon/20.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -319,6 +346,7 @@ const newsData = [
   {
     id: "긴급속보",
     img: "img/transfer-img/342x192/em-img-08.jpg",
+    moon:"img/trust-icon/40.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -330,6 +358,7 @@ const newsData = [
   {
     id: "긴급속보",
     img: "img/transfer-img/342x192/em-img-09.jpg",
+    moon:"img/trust-icon/80.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -344,6 +373,7 @@ const newsData = [
   {
     id: "루머",
     img: "img/transfer-img/342x192/ru-img-01.jpg",
+    moon:"img/trust-icon/40.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -355,6 +385,7 @@ const newsData = [
   {
     id: "루머",
     img: "img/transfer-img/342x192/ru-img-02.jpg",
+    moon:"img/trust-icon/20.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -366,6 +397,7 @@ const newsData = [
   {
     id: "루머",
     img: "img/transfer-img/342x192/ru-img-03.jpg",
+    moon:"img/trust-icon/40.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -377,6 +409,7 @@ const newsData = [
   {
     id: "루머",
     img: "img/transfer-img/342x192/ru-img-04.jpg",
+    moon:"img/trust-icon/20.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -388,6 +421,7 @@ const newsData = [
   {
     id: "루머",
     img: "img/transfer-img/342x192/ru-img-05.jpg",
+    moon:"img/trust-icon/20.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -400,6 +434,7 @@ const newsData = [
   {
     id: "루머",
     img: "img/transfer-img/342x192/ru-img-06.jpg",
+    moon:"img/trust-icon/60.svg",
     player: "다르윈 누녜스",
     time: "20분 전",
     title:
@@ -471,13 +506,13 @@ function renderNewsList(data) {
   const imgPrefix = getImagePathPrefix();
   wrapper.innerHTML = "";
 
-  data.forEach(({ img, player, time, title, trust, reporterImg, reporter }) => {
+  data.forEach(({ img, player, moon, time, title, trust, reporterImg, reporter }) => {
     const slide = document.createElement("div");
     slide.className = "swiper-slide item";
     slide.innerHTML = `
       <figure>
         <img src="${imgPrefix}${img}" alt="${player}" />
-        <span class="icon"></span>
+        <span class="icon"><img src="${imgPrefix}${moon}" alt=""></span>
       </figure>
       <div class="txt">
         <p class="info">

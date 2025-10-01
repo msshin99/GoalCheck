@@ -13,6 +13,7 @@ function getImagePathPrefix() {
 const newsData = [
   {
     img: "img/news-img/342x192/img-01.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "라민 야말",
     time: "방금전",
     title:
@@ -27,6 +28,7 @@ const newsData = [
   },
   {
     img: "img/news-img/342x192/img-02.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "킬리안 음바페",
     time: "10분 전",
     title:
@@ -41,6 +43,7 @@ const newsData = [
   },
   {
     img: "img/news-img/342x192/img-03.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "엘링 홀란드",
     time: "15분 전",
     title:
@@ -55,6 +58,7 @@ const newsData = [
   },
   {
     img: "img/news-img/342x192/img-04.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "벤자민 세슈코",
     time: "30분 전",
     title:
@@ -69,6 +73,7 @@ const newsData = [
   },
   {
     img: "img/news-img/342x192/img-05.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "콜 파머",
     time: "20분 전",
     title:
@@ -83,6 +88,7 @@ const newsData = [
   },
   {
     img: "img/news-img/342x192/img-06.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "모하메드 살라",
     time: "15분 전",
     title:
@@ -97,6 +103,7 @@ const newsData = [
   },
   {
     img: "img/news-img/342x192/img-07.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "필 포든",
     time: "15분 전",
     title:
@@ -111,6 +118,7 @@ const newsData = [
   },
   {
     img: "img/news-img/342x192/img-08.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "해리 케인",
     time: "30분 전",
     title: "손흥민과 미국서 재회할까.. 케인, 은퇴 후 NFL 도전 가능성 다시 화제",
@@ -124,6 +132,7 @@ const newsData = [
   },
   {
     img: "img/news-img/342x192/img-09.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "부카요 사카",
     time: "10분 전",
     title:
@@ -138,6 +147,7 @@ const newsData = [
   },
   {
     img: "img/news-img/342x192/img-10.jpg",
+    moon:"img/trust-icon/100.svg",
     player: "오마르 마르무쉬",
     time: "10분 전",
     title: "'맨시티 한숨' 마르무쉬 대표팀서 부상, 맨체스터 더비 결장",
@@ -151,12 +161,13 @@ const newsData = [
   },
   {
     img: "img/news-img/342x192/img-11.jpg",
+    moon:"img/trust-icon/60.svg",
     player: "데클란 라이스",
     time: "15분 전",
     title: "무려 2025억 제안했는데…파리 생제르맹 '퇴짜' 맞았다",
     reporterImg: "img/profile-img/face/face-18.png",
     reporter: "에이미 로렌스",
-    trust: 100,
+    trust: 60,
     link: "insights/viewpage.html",
     date: "2023.08.21",
     view: "344",
@@ -164,12 +175,13 @@ const newsData = [
   },
   {
     img: "img/news-img/342x192/img-12.jpg",
+    moon:"img/trust-icon/80.svg",
     player: "주드 벨링엄",
     time: "30분 전",
     title: "레알 마드리드 '공격 핵심' 벨링엄, 어깨수술로 최대 3개월 결장",
     reporterImg: "img/profile-img/face/face-14.png",
     reporter: "사이먼 휴즈",
-    trust: 100,
+    trust: 80,
     link: "insights/viewpage.html",
     date: "2025.11.12",
     view: "465",
@@ -188,7 +200,7 @@ function createNewsItem(item) {
     <div class="swiper-slide item" onclick="location.href='${imgPrefix}${item.link}'" >
       <figure>
         <img src="${imgPrefix}${item.img}" alt="${item.player}">
-        <span class="icon"></span>
+        <span class="icon"><img src="${imgPrefix}${item.moon}" alt=""></span>
       </figure>
       <div class="txt">
         <p class="info">

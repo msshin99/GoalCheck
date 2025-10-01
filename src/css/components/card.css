@@ -29,7 +29,6 @@
 }
 
 .card-list .item figure img {
-  background: #111;
   transition: transform 0.5s ease;
   display: block;
 }
@@ -170,6 +169,10 @@
   line-height: 22px;
   font-weight: var(--regular);
   color: var(--tertiary-txt);
+}
+
+.sub-inner .main-card .txt-wrap .sub{
+  margin-bottom: 24px;
 }
 
 .info span {
@@ -320,6 +323,11 @@
     color: var(--tertiary-txt);
   }
 
+  .sub-inner .main-card .txt-wrap .sub{
+    margin-bottom: 18px;
+  }
+
+
   .sub-profile.B .name {
     font-size: 15px !important;
   }
@@ -401,6 +409,11 @@
   .sub-profile {
     gap: 6px;
   }
+
+  .sub-inner .main-card .txt-wrap .sub{
+    margin-bottom: 14px;
+  }
+
 
   .sub-profile .img {
     width: 24px;

@@ -46,6 +46,7 @@ header .top .right-menu label input {
   border: none;
   width: 100%;
   font-size: 14px;
+  outline: none;
 }
 
 header .top .right-menu label button {
@@ -62,6 +63,11 @@ header .top .right-menu p a {
   line-height: 22px;
   letter-spacing: -0.4px;
   color: var(--tertiary-txt);
+  transition: all 0.5s ease;
+}
+
+header .top .right-menu p a:hover{
+  color: var(--primary-txt);
 }
 
 header .top .right-menu p a.login {
@@ -172,7 +178,7 @@ header nav .table-btn:hover {
   }
 
   header .top .logo img {
-    width: 128px;
+    width: 146px;
   }
 
   header nav ul li {
@@ -299,7 +305,6 @@ span.icon {
   position: absolute;
   right: 14px;
   top: 14px;
-  background-color: #111;
   border-radius: 50%;
   box-shadow: 5px 4px 3px -1px rgba(35, 48, 59, 0.12);
 }
@@ -698,7 +703,7 @@ footer .bottom .right .family-site select option {
   }
 
   footer .top h1 img  {
-    width: 128px;
+    width: 146px;
   }
 
 
