@@ -1,4 +1,21 @@
-// 뉴스 데이터 배열
+
+
+
+// ---------------
+
+
+// 경로 prefix 결정 함수
+function getImagePathPrefix() {
+  const path = window.location.pathname;
+  // sub 폴더 안에 있거나, 루트가 아닌 깊은 경로인 경우
+  const isSubPage =
+    path.includes("/sub/") ||
+    (path.split("/").filter((p) => p).length > 1 &&
+      !path.endsWith("index.html"));
+  return isSubPage ? "../" : "";
+}
+
+// ==================== 뉴스 데이터 배열 (여기에 전체 데이터 입력) ====================
 const newsData = [
   {
     id: "오피셜",
@@ -393,6 +410,8 @@ const newsData = [
   },
 ];
 
+// ==================================================================================
+
 // 스와이퍼 인스턴스를 저장할 변수
 let transferSwiperInstance = null;
 
@@ -407,7 +426,7 @@ function initNewsSwiper() {
   // transfer 관련 뉴스 섹션 찾기
   const newsSection = document
     .querySelector("#transfer-menu")
-    .closest(".news-section");
+    ?.closest(".news-section");
   if (!newsSection) {
     console.warn("News section not found");
     return;
@@ -449,6 +468,7 @@ function renderNewsList(data) {
     return;
   }
 
+  const imgPrefix = getImagePathPrefix();
   wrapper.innerHTML = "";
 
   data.forEach(({ img, player, time, title, trust, reporterImg, reporter }) => {
@@ -456,7 +476,7 @@ function renderNewsList(data) {
     slide.className = "swiper-slide item";
     slide.innerHTML = `
       <figure>
-        <img src="${img}" alt="${player}" />
+        <img src="${imgPrefix}${img}" alt="${player}" />
         <span class="icon"></span>
       </figure>
       <div class="txt">
@@ -466,7 +486,7 @@ function renderNewsList(data) {
         </p>
         <h5 class="tit">${title}</h5>
         <p class="sub-profile">
-          <span class="img"><img src="${reporterImg}" alt="${reporter}"></span>
+          <span class="img"><img src="${imgPrefix}${reporterImg}" alt="${reporter}"></span>
           <span class="name">${reporter}</span>
         </p>
         <div class="chart-wrap">
@@ -476,7 +496,6 @@ function renderNewsList(data) {
           </div>
           <span class="percent">${trust}%</span>
         </div>
-
       </div>
     `;
     wrapper.appendChild(slide);
@@ -535,7 +554,7 @@ function initNewsTabFilter() {
 
 // 기존 뉴스 섹션 스와이퍼들을 초기화하는 함수 (기존 코드 유지)
 function initAllNewsSwipers() {
-  document.querySelectorAll(".news-section").forEach((section, index) => {
+  document.querySelectorAll(".news-section").forEach((section) => {
     const swiperEl = section.querySelector(".swiper");
 
     // transfer 섹션이 아닌 경우에만 초기화 (transfer는 따로 관리)

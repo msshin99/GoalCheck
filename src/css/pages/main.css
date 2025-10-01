@@ -688,6 +688,11 @@ section.ranking div .ran-table .tr b {
     width: 280px !important;
   }
 
+  .gray-bg .profile-list .card:first-child{
+  margin-left: 40px;
+}
+
+
   .gray-bg .profile-list .card .txt-box {
     padding: 14px;
     padding-top: 32px;
@@ -761,7 +766,7 @@ section.ranking div .ran-table .tr b {
   }
 
   .gray-bg .profile-list .swiper-slide:first-child {
-    margin-left: 0;
+    margin-left: 20px;
   }
 
   .gray-bg .profile-list .card .txt-box .link-wrap a {
@@ -784,15 +789,26 @@ section.quiz .inner div {
 
 section.quiz .inner div .bg-img {
   margin-bottom: 24px;
-}
-
-section.quiz .inner div .bg-img img {
   background: linear-gradient(
     180deg,
     rgba(144, 200, 255, 0.8) 0%,
     #c7e4ff 100%
   );
   border-radius: 12px;
+  aspect-ratio: 708 / 390;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  overflow: hidden;
+}
+
+section.quiz .inner div .bg-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  box-shadow: rgba(0, 27, 55, 0.1) 0px 2px 10px, rgba(2, 32, 71, 0.05) 0px 3px 20px;
 }
 
 section.quiz .inner div .txt {

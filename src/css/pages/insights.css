@@ -135,12 +135,15 @@ article .view-content img {
 }
 
 article .view-content .view-txt {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 32px;
+  gap: 28px;
 }
 
 article .view-content .view-txt p {
   font-size: 14px;
-  line-height: 40px;
+  line-height: 22px;
   font-weight: var(--regular);
   color: var(--tertiary-txt);
   text-align: left;
@@ -274,7 +277,6 @@ article .view-content ul.hashtag li:hover {
 .com-face {
   width: 32px;
   height: 32px;
-  background: #ddd;
   border-radius: 50%;
   display: inline-block;
 }
@@ -324,7 +326,7 @@ article .view-content ul.hashtag li:hover {
   color: var(--tertiary-txt);
   border: 1px solid var(--border);
   border-radius: 4px;
-  padding: 11px 24px;
+  padding: 8px 20px;
   transition: all 0.5s ease;
   cursor: pointer;
 }
@@ -403,8 +405,11 @@ article .view-content ul.hashtag li:hover {
   }
 
   article .view-content .view-txt {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
+    gap: 20px;
   }
+
+  
 
   .report-info .top {
     margin-bottom: 16px;
@@ -475,6 +480,7 @@ article .view-content ul.hashtag li:hover {
 
   article .view-content .view-txt {
     margin-bottom: 18px;
+    gap: 16px;
   }
 
   article .view-top .view-sub .view-btn-list {
@@ -491,7 +497,7 @@ article .view-content ul.hashtag li:hover {
   }
 
   article .view-content img {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   .report-info {

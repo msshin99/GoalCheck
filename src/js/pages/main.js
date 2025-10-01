@@ -25,3 +25,32 @@ menus.forEach((menu) => {
     });
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Select all the clickable sub-list items
+    const radioItems = document.querySelectorAll('.select-tab > li > .radio-box > ul > li');
+
+    radioItems.forEach(item => {
+        item.addEventListener('click', function() {
+            // Get the text content of the clicked item
+            const selectedText = this.textContent.trim();
+
+            // Find the parent 'li' of the clicked item
+            // 1. Get the parent 'ul'
+            // 2. Get the parent '.radio-box'
+            // 3. Get the parent 'li.select-tab'
+            const parentListItem = this.closest('.select-tab > li');
+
+            if (parentListItem) {
+                // Find the <p> element within the '.left' div of the parent 'li'
+                const paragraph = parentListItem.querySelector('.left p');
+
+                if (paragraph) {
+                    // Update the text content of the <p> element
+                    paragraph.textContent = selectedText;
+                }
+            }
+        });
+    });
+});

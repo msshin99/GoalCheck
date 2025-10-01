@@ -86,12 +86,7 @@ document
   });
 
 const profileList = new Swiper(".profile-list", {
-  slidesPerView: 5.295, // auto로 변경
-  spaceBetween: 24,
-  loop: true,
-  centeredSlides: false,
-  loopAdditionalSlides: 0,
-  slidesOffsetBefore: 0,
+  spaceBetween: 12,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -99,6 +94,19 @@ const profileList = new Swiper(".profile-list", {
   navigation: {
     nextEl: ".next-btn",
     prevEl: ".prev-btn",
+  },
+    breakpoints: {
+    1024: {
+      slidesPerView: 5.295,
+      spaceBetween: 24,
+      loop: true,
+      centeredSlides: false,
+    },
+    767: {
+      slidesPerView: "auto",
+      spaceBetween: 16,
+      centeredSlides: false,
+    },
   },
 });
 const subSlide = new Swiper(".sub-slide", {
