@@ -17,50 +17,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // === 경로 자동 보정 시작 ===
 
-        // 1. 현재 페이지의 경로(window.location.pathname)를 얻습니다.
         const currentPath = window.location.pathname;
-
-        // 2. 경로 보정을 위한 접두사(`../`, `../../` 등)를 결정합니다.
         let prefix = "";
 
-        // 메인 페이지(루트 또는 index.html)가 아닌 경우만 보정 로직 실행
-        const isMainPage = 
-          currentPath === "/" || // 깃허브 페이지 루트 (예: https://user.github.io/repo-name/)
-          currentPath.endsWith("/index.html") || // index.html 직접 접근
-          currentPath.endsWith("/"); // 폴더명으로 접근 (예: https://user.github.io/repo-name/insights/)
+        // 현재 경로에서 리포지토리 이름(예: /GOALCHECK)과 파일명을 제외한 순수 폴더 깊이를 계산합니다.
+        
+        // 1. URL 경로를 '/'로 분리하고 빈 문자열을 제거합니다.
+        // 예: /GOALCHECK/insights/sub.html  → ["GOALCHECK", "insights", "sub.html"] (길이 3)
+        // 예: /GOALCHECK/index.html         → ["GOALCHECK", "index.html"] (길이 2)
+        const pathSegments = currentPath.split("/").filter(segment => segment.length > 0);
+        
+        // 2. 메인 페이지인지 확인합니다.
+        const isMainPage = pathSegments.length <= 2 && (pathSegments.length === 0 || pathSegments[pathSegments.length - 1].toLowerCase().endsWith('index.html'));
 
         if (!isMainPage) {
-          // 서브페이지: 경로의 깊이를 계산합니다.
-          
-          // 경로를 슬래시로 분리하고 빈 문자열을 제거합니다.
-          // 예: /GOALCHECK/insights/gridpage.html → ["GOALCHECK", "insights", "gridpage.html"]
-          const pathSegments = currentPath.split("/").filter(segment => segment.length > 0);
-          
-          // 깃허브 페이지의 URL 구조를 고려하여 깊이를 계산합니다.
-          // 보통 URL 구조는 /repository-name/path/to/file.html 입니다.
-          // 경로 깊이 = (전체 세그먼트 수) - (리포지토리 이름) - (현재 파일명)
-          
-          // 'GOALCHECK'가 리포지토리 이름이라고 가정합니다.
-          // pathSegments.length는 현재 파일명을 포함한 세그먼트 개수입니다.
-          
-          let segmentCount = pathSegments.length;
-          let depth = 0;
-          
-          if (segmentCount > 0) {
-              // 리포지토리 이름 세그먼트 (예: GOALCHECK) 1개를 제외합니다.
-              // 그리고 현재 페이지 파일명 세그먼트 1개를 제외합니다.
-              // 남는 것이 서브 폴더의 깊이입니다.
-              // 예: /GOALCHECK/insights/gridpage.html (3개) -> 깊이: 3 - 2 = 1
-              // 예: /GOALCHECK/index.html (2개) -> 깊이: 2 - 2 = 0 (isMainPage에서 걸러지나 안전장치)
-              depth = segmentCount - 2; 
-          }
+            // 서브 페이지인 경우:
+            // 깊이 = (전체 세그먼트 개수) - (리포지토리 이름 세그먼트 1개) - (현재 파일명 세그먼트 1개)
+            // 즉, /GOALCHECK/insights/sub.html (3개) -> 깊이 = 3 - 2 = 1
+            const depth = pathSegments.length - 2; 
 
-          if (depth > 0) {
-            prefix = "../".repeat(depth);
-          }
+            if (depth > 0) {
+                // depth가 1이면 "../", 2이면 "../../"
+                prefix = "../".repeat(depth);
+            }
         }
 
-        // 3. 접두사가 있는 경우 (서브 페이지인 경우)에만 포함된 HTML 요소의 경로를 보정합니다.
+        // 3. 접두사가 있는 경우에만 포함된 HTML 요소의 경로를 보정합니다.
         if (prefix) {
           element.querySelectorAll("img, a, link, script").forEach((el) => {
             ["src", "href"].forEach((attr) => {
@@ -70,13 +52,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 // 4. 절대 경로, 외부 링크, 앵커, 이미 보정된 경로는 제외하고 상대 경로만 보정합니다.
                 if (
                   val &&
-                  !val.startsWith("http") && // 외부 링크
-                  !val.startsWith("#") && // 앵커 링크
-                  !val.startsWith("/") && // 절대 경로
+                  !val.startsWith("http") && 
+                  !val.startsWith("#") && 
+                  !val.startsWith("/") && 
                   !val.startsWith("mailto:") &&
                   !val.startsWith("tel:") &&
                   !val.startsWith("data:") &&
-                  !val.startsWith("../") // 이미 상대 경로인 경우
+                  !val.startsWith("../") // 이미 상대 경로인 경우 제외 (중복 방지 핵심)
                 ) {
                   // 보정된 경로를 속성에 다시 설정합니다.
                   el.setAttribute(attr, prefix + val);
