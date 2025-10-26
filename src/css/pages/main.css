@@ -539,9 +539,9 @@ section.ranking div .ran-table .tr b {
   transition: all 0.5s ease;
 }
 
-.gray-bg .profile-list .card:first-child{
+/* .gray-bg .profile-list .card:first-child{
   margin-left: 240px;
-}
+} */
 
 .gray-bg .profile-list .gray-bg .profile-list .card:hover {
   box-shadow:
@@ -688,9 +688,9 @@ section.ranking div .ran-table .tr b {
     width: 280px !important;
   }
 
-  .gray-bg .profile-list .card:first-child{
+  /* .gray-bg .profile-list .card:first-child{
   margin-left: 40px;
-}
+} */
 
 
   .gray-bg .profile-list .card .txt-box {
@@ -765,9 +765,9 @@ section.ranking div .ran-table .tr b {
     padding-left: 0;
   }
 
-  .gray-bg .profile-list .swiper-slide:first-child {
+  /* .gray-bg .profile-list .swiper-slide:first-child {
     margin-left: 20px;
-  }
+  } */
 
   .gray-bg .profile-list .card .txt-box .link-wrap a {
     width: 92px;

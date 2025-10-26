@@ -28,6 +28,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-logo/liv.svg",
     reporter: "리버풀 공식 홈페이지",
+    link: "insights/viewpage.html",
   },
   {
     id: "오피셜",
@@ -40,6 +41,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-logo/che.svg",
     reporter: "첼시 공식 홈페이지",
+    link: "insights/viewpage.html",
   },
 
   {
@@ -52,6 +54,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-logo/liv.svg",
     reporter: "리버풀 공식 홈페이지",
+    link: "insights/viewpage.html",
   },
   {
     id: "오피셜",
@@ -64,6 +67,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-logo/mac.svg",
     reporter: "멘체스터시티 공식 홈페이지",
+    link: "insights/viewpage.html",
   },
   {
     id: "오피셜",
@@ -76,6 +80,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-logo/mac.svg",
     reporter: "멘체스터시티 공식 홈페이지",
+    link: "insights/viewpage.html",
   },
   {
     id: "오피셜",
@@ -88,6 +93,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-logo/che.svg",
     reporter: "첼시 공식 홈페이지",
+    link: "insights/viewpage.html",
   },
   {
     id: "오피셜",
@@ -99,6 +105,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-logo/che.svg",
     reporter: "첼시 공식 홈페이지",
+    link: "insights/viewpage.html",
   },
   {
     id: "오피셜",
@@ -110,6 +117,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-logo/ars.svg",
     reporter: "아스날 공식 홈페이지",
+    link: "insights/viewpage.html",
   },
   {
     id: "오피셜",
@@ -121,6 +129,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-logo/tot.svg",
     reporter: "토트넘 공식 홈페이지",
+    link: "insights/viewpage.html",
   },
   {
     id: "오피셜",
@@ -132,6 +141,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-logo/liv.svg",
     reporter: "리버풀 공식 홈페이지",
+    link: "insights/viewpage.html",
   },
   {
     id: "오피셜",
@@ -144,6 +154,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-logo/mau.svg",
     reporter: "멘체스터 유나이티드 공식 홈페이지",
+    link: "insights/viewpage.html",
   },
   {
     id: "오피셜",
@@ -156,6 +167,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-logo/liv.svg",
     reporter: "리버풀 공식 홈페이지",
+    link: "insights/viewpage.html",
   },
 
   // ----------- 거피셜 ----------
@@ -171,6 +183,7 @@ const newsData = [
     trust: 80,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "거피셜",
@@ -183,6 +196,7 @@ const newsData = [
     trust: 80,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "거피셜",
@@ -195,6 +209,7 @@ const newsData = [
     trust: 80,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "거피셜",
@@ -207,6 +222,7 @@ const newsData = [
     trust: 80,
     reporterImg: "img/profile-img/face/face-05.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "거피셜",
@@ -219,6 +235,7 @@ const newsData = [
     trust: 80,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "거피셜",
@@ -231,6 +248,7 @@ const newsData = [
     trust: 60,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "거피셜",
@@ -243,6 +261,7 @@ const newsData = [
     trust: 60,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "거피셜",
@@ -255,6 +274,7 @@ const newsData = [
     trust: 80,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
 
   // -------긴급속보-----------
@@ -270,6 +290,7 @@ const newsData = [
     trust: 40,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "긴급속보",
@@ -282,6 +303,7 @@ const newsData = [
     trust: 60,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "긴급속보",
@@ -294,6 +316,7 @@ const newsData = [
     trust: 40,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "긴급속보",
@@ -306,6 +329,7 @@ const newsData = [
     trust: 40,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "긴급속보",
@@ -318,6 +342,7 @@ const newsData = [
     trust: 20,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "긴급속보",
@@ -330,6 +355,7 @@ const newsData = [
     trust: 60,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "긴급속보",
@@ -342,6 +368,7 @@ const newsData = [
     trust: 20,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "긴급속보",
@@ -354,6 +381,7 @@ const newsData = [
     trust: 40,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "긴급속보",
@@ -366,6 +394,7 @@ const newsData = [
     trust: 80,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
 
   // ---------------루머---------------
@@ -381,6 +410,7 @@ const newsData = [
     trust: 40,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "루머",
@@ -393,6 +423,7 @@ const newsData = [
     trust: 20,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "루머",
@@ -405,6 +436,7 @@ const newsData = [
     trust: 40,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "루머",
@@ -417,6 +449,7 @@ const newsData = [
     trust: 20,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
   {
     id: "루머",
@@ -429,6 +462,7 @@ const newsData = [
     trust: 20,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
 
   {
@@ -442,6 +476,7 @@ const newsData = [
     trust: 60,
     reporterImg: "img/profile-img/face/face-01.png",
     reporter: "데이비드 온스테안",
+    link: "insights/viewpage.html",
   },
 ];
 
@@ -506,10 +541,11 @@ function renderNewsList(data) {
   const imgPrefix = getImagePathPrefix();
   wrapper.innerHTML = "";
 
-  data.forEach(({ img, player, moon, time, title, trust, reporterImg, reporter }) => {
+  data.forEach(({ img, player, moon, time, title, trust, reporterImg, reporter, link }) => {
     const slide = document.createElement("div");
     slide.className = "swiper-slide item";
     slide.innerHTML = `
+    <div class="swiper-slide item" onclick="location.href='${imgPrefix}${link}'" >
       <figure>
         <img src="${imgPrefix}${img}" alt="${player}" />
         <span class="icon"><img src="${imgPrefix}${moon}" alt=""></span>
