@@ -259,6 +259,7 @@ a.sub-btn:hover {
   font-weight: var(--regular);
   color: var(--tertiary-txt);
   margin-right: 12px;
+  width: 40px;
 }
 
 .rate {

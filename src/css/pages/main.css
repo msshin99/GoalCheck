@@ -537,6 +537,7 @@ section.ranking div .ran-table .tr b {
   background: #fff;
   border-radius: 8px;
   transition: all 0.5s ease;
+  min-width: 342px !important;
 }
 
 /* .gray-bg .profile-list .card:first-child{
@@ -685,7 +686,7 @@ section.ranking div .ran-table .tr b {
   }
 
   .gray-bg .profile-list .card {
-    width: 280px !important;
+    min-width: 280px !important;
   }
 
   /* .gray-bg .profile-list .card:first-child{
@@ -770,7 +771,7 @@ section.ranking div .ran-table .tr b {
   } */
 
   .gray-bg .profile-list .card .txt-box .link-wrap a {
-    width: 92px;
+    width: 102px;
     padding: 8px 10px;
   }
 }

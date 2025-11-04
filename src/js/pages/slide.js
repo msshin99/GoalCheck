@@ -87,6 +87,8 @@ document
 
 const profileList = new Swiper(".profile-list", {
   spaceBetween: 12,
+  slidesPerView: "auto",
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -95,6 +97,7 @@ const profileList = new Swiper(".profile-list", {
     nextEl: ".next-btn",
     prevEl: ".prev-btn",
   },
+  centeredSlides: false,
     breakpoints: {
     1024: {
       slidesPerView: 5.295,
@@ -103,12 +106,15 @@ const profileList = new Swiper(".profile-list", {
       centeredSlides: false,
     },
     767: {
-      slidesPerView: "auto",
+      slidesPerView: 3.5,
       spaceBetween: 16,
       centeredSlides: false,
     },
   },
 });
+
+
+
 const subSlide = new Swiper(".sub-slide", {
   slidesPerView: 1,
   spaceBetween: 12,

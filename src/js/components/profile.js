@@ -182,6 +182,58 @@ const journalistData = [
     twitterLink: "#",
     articlesLink: "#"
   },
+    {
+    id: 17,
+    name: "데이비드 온스테인",
+    company: "@The Athletic",
+    bio: "BBC 스포츠 기자로 약 12년 활동 후 2019년 10월 The Athletic 합류",
+    followers: 238,
+    following: 238,
+    backgroundImage: "img/profile-img/bg/bg-1.jpg",
+    faceImage: "img/profile-img/face/face-01.png",
+    isVerified: true,
+    twitterLink: "#",
+    articlesLink: "#"
+  },
+    {
+    id: 18,
+    name: "제임스 피어스",
+    company: "@The Athletic",
+    bio: "14년간 리버풀에코에서 일하다 디 에슬레틱으로 이직하여 리버풀 공신력 1티어 유지",
+    followers: 238,
+    following: 238,
+    backgroundImage: "img/profile-img/bg/bg-2.jpg",
+    faceImage: "img/profile-img/face/face-02.png",
+    isVerified: true,
+    twitterLink: "#",
+    articlesLink: "#"
+  },
+      {
+    id: 19,
+    name: "파브르지오  로마노",
+    company: "@caughtoffside",
+    bio: "2020년대부터 축구 이적시장 정보에 관련해서 매우 높은 명성을 얻고 있다.",
+    followers: 238,
+    following: 238,
+    backgroundImage: "img/profile-img/bg/bg-3.jpg",
+    faceImage: "img/profile-img/face/face-03.png",
+    isVerified: true,
+    twitterLink: "#",
+    articlesLink: "#"
+  },
+    {
+    id: 20,
+    name: "제이콥 스테인버그",
+    company: "@The Athletic",
+    bio: "BBC 스포츠 기자로 약 12년 활동 후 2019년 10월 The Athletic 합류",
+    followers: 238,
+    following: 238,
+    backgroundImage: "img/profile-img/bg/bg-4.jpg",
+    faceImage: "img/profile-img/face/face-04.png",
+    isVerified: true,
+    twitterLink: "#",
+    articlesLink: "#"
+  },
 
 ];
 

@@ -544,6 +544,7 @@ span.percent {
   align-items: center;
   gap: 24px;
   padding: 24px 0;
+  align-items: flex-start;
 }
 
 .news-table ul.table > li.underline {
@@ -605,6 +606,10 @@ span.percent {
     align-items: unset;
     gap: 10px;
   }
+
+    .news-table ul.table > li > .content .logo-img{
+      min-width: 58px;
+    }
 
   .news-table ul.table > li > .content > .txt > .sub {
     flex-wrap: wrap;
