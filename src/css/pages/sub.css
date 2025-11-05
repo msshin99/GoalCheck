@@ -1,0 +1,118 @@
+ul.faq li {
+    background: #fafafa;
+    padding: 28px 24px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+ul.faq li .qu {
+    font-family: var(--font-primary);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: var(--medium);
+    color: var(--primary-txt);
+    cursor: pointer; /* 클릭 가능한 요소임을 표시 */
+    transition: color 0.2s;
+}
+        
+ul.faq li .qu:hover {
+    color: var(--primary);
+}
+
+ul.faq li .qu span {
+    color: var(--primary);
+}
+
+ul.faq li .ans p {
+    font-family: var(--font-primary);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: var(--regular);
+    color: var(--secondary-txt);
+}
+
+ul.faq li .ans {
+    height: 0; 
+    overflow: hidden;
+    padding: 0 16px;
+    transition: height 0.4s ease-in-out, padding-top 0.4s ease-in-out;
+}
+        
+ul.faq li .qu h5 {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+ul.faq li .qu h5:after {
+    content: "+";
+    color: var(--tertiary-txt);
+    margin-left: auto;
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+
+ul.faq li.open .qu {
+    color: var(--primary);
+}
+
+ul.faq li.open .qu h5:after {
+    content: "-";
+    transform: rotate(0deg);
+}
+
+
+@media (max-width: 1024px) {
+
+  ul.faq li {
+    padding: 22px 18px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+}
+
+ul.faq li .qu {
+    gap: 4px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+ul.faq li .ans p {
+    font-size: 15px;
+}
+ul.faq li .ans {
+    padding: 0 12px;
+}
+      
+ul.faq li .qu h5:after {
+    font-size: 20px;
+}
+
+}
+
+
+@media (max-width: 767px) {
+
+  ul.faq li {
+    padding: 20px 14px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+ul.faq li .qu {
+    gap: 4px;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+ul.faq li .ans p {
+    font-size: 14px;
+    line-height: 20px;
+}
+ul.faq li .ans {
+    padding: 0 10px;
+}
+      
+}
