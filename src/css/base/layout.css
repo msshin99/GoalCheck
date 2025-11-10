@@ -13,11 +13,11 @@ header .top {
   margin-bottom: 16px;
 }
 
-header .top .logo {
+header .logo {
   cursor: pointer;
 }
 
-header .top .logo img {
+header h1.logo img {
   width: 199px;
 }
 
@@ -149,12 +149,21 @@ header nav .table-btn:hover {
   background: #1957C2;
 }
 
+header .mo-menu{
+  display: none;
+}
+
+header .mo-open-menu{
+  display: none;
+}
+
+
 @media (max-width: 1024px) {
   header {
     padding: 20px 40px;
   }
 
-  header .top .logo img {
+  header h1.logo img {
     width: 160px;
   }
 
@@ -177,24 +186,20 @@ header nav .table-btn:hover {
     margin-bottom: 14px;
   }
 
-  header .top .logo img {
+  header h1.logo img {
     width: 146px;
   }
 
-  header nav ul li {
-    display: none;
-  }
-
-  header nav ul li:first-child {
-    width: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  header nav .mo-menu{
     cursor: pointer;
   }
 
-  header nav ul li:first-child img {
+  header nav .mo-menu img {
     width: 28px;
+  }
+
+  header nav ul{
+    display: none;
   }
 
   header .top .right-menu {
@@ -229,6 +234,86 @@ header nav .table-btn:hover {
     width: 86px;
     padding: 6px;
   }
+
+  
+  header .mo-menu{
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+
+  header .mo-open-menu{
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease-in-out; 
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    padding: 14px 0;
+    display: block;
+  }
+
+  header .mo-open-menu ul{
+    padding: 40px 15px;
+  }
+
+  header .mo-open-menu ul li{
+    font-family: var(--font-primary);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: var(--medium);
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header .mo-open-menu ul li:last-child{
+    margin-bottom: 0;
+  }
+
+  header .mo-open-menu ul li img.arrow {
+    opacity: 0;
+    visibility: hidden;
+    width: 28px;
+    transform: translateX(-6px);
+    transition: 
+      opacity 0.5s ease,
+      transform 0.5s ease,
+      visibility 0.5s;
+  }
+
+  header .mo-open-menu ul li:hover img.arrow {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  header .mo-open-menu.active {
+    transform: translateX(0); 
+  }
+  header .mo-open-menu .mo-top{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .mo-open-menu .mo-top h1.logo{
+    padding-left: 16px;
+  }
+
+  header .mo-open-menu .mo-top .close{
+    cursor: pointer;
+    padding-right: 16px;
+  }
+
+  header .mo-open-menu .mo-top .close img{
+    width: 24px;
+  }
+  
+
 }
 
 /* ------------공통--------------- */

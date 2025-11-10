@@ -15,12 +15,90 @@
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
     <script src="../src/js/include.js" defer></script>
+    <script src="../src/js/pages/layout.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="../src/js/pages/main.js" type="module"></script>
     <title>Document</title>
   </head>
   <body>
-    <header data-include-file="../layout/header.html"></header>
+    <header>
+      <div class="header-inner">
+        <div class="top">
+          <h1 class="logo">
+            <a href="../index.html"><img src="../img/comn/h-logo.png" alt="" /></a>
+          </h1>
+          <div class="right-menu">
+            <label>
+              <input placeholder="검색어를 입력해주세요" />
+              <button><img src="../img/comn/search.png" alt="" /></button>
+            </label>
+            <button type="button" class="search-mo">
+              <img src="../img/comn/search.png" alt="" />
+            </button>
+            <p>
+              <a href="#" class="login">로그인</a>
+              <a href="#" class="join">회원가입</a>
+              <a href="#" class="mo">로그인</a>
+            </p>
+          </div>
+        </div>
+        <nav class="gnb">
+          <button class="mo-menu" type="button"><img src="../img/comn/m-menu.png" alt="" /></button>
+          <ul>
+            <li><a href="../insights/gridpage.html" target="_blank">전체소식</a></li>
+            <li>
+              <a href="../insights/ol-gridpage.html" target="_blank">이적소식</a>
+            </li>
+            <li>
+              <a href="../column/" target="_blank">기자 공신력</a>
+            </li>
+            <li>
+              <a href="../league-center/ranking.html" target="_blank">리그순위</a>
+            </li>
+            <li><a href="../column/column-list.html" target="_blank">축구칼럼</a></li>
+            <li>
+              <a href="../faq/faq.html" target="_blank">자주 묻는 질문</a>
+            </li>
+          </ul>
+          <a href="../public-trust/report-table.html" class="table-btn"
+            >공신력 등급 표</a
+          >
+        </nav>
+        <div class="mo-open-menu">
+          <div class="mo-top">
+              <h1 class="logo">
+                <a href="../index.html"><img src="../img/comn/h-logo.png" alt="" /></a>
+              </h1>
+              <button class="close" type="button"><img src="../img/comn/m-close.png" alt="" /></button>
+          </div>
+          <ul>
+            <li><a href="../insights/gridpage.html" target="_blank">전체소식</a>
+                <img class="arrow" src="../img/comn/arrow.png" alt="" />
+            </li>
+            <li>
+              <a href="../insights/ol-gridpage.html" target="_blank">이적소식</a>
+              <img class="arrow" src="../img/comn/arrow.png" alt="" />
+            </li>
+            <li>
+              <a href="../public-trust/report-table.html" target="_blank">기자 공신력</a>
+              <img class="arrow" src="../img/comn/arrow.png" alt="" />
+            </li>
+            <li>
+              <a href="../league-center/ranking.html" target="_blank">리그순위</a>
+              <img class="arrow" src="../img/comn/arrow.png" alt="" />
+            </li>
+            <li><a href="../column/column-list.html" target="_blank">축구칼럼</a>
+                <img class="arrow" src="../img/comn/arrow.png" alt="" />
+            </li>
+
+            <li>
+              <a href="../faq/faq.html" target="_blank">자주 묻는 질문</a>
+              <img class="arrow" src="../img/comn/arrow.png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <div class="sub-inner">
       <div class="news-table">
         <h2 class="section-title">보고싶은 기자들의 소식만 골라보든 소식</h2>
