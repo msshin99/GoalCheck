@@ -2,44 +2,44 @@
 const journalistData = [
   {
     id: 1,
-    name: "데이비드 온스테인",
-    company: "@The Athletic",
-    bio: "BBC 스포츠 기자로 약 12년 활동 후 2019년 10월 The Athletic 합류",
+    name: "알렉스 모건",
+    company: "@IDEO · Design Lead",
+    bio: "글로벌 브랜드 UX 프로젝트를 다수 이끌며 사용자 중심 디자인 프로세스를 강의하고 있다.",
     followers: 238,
     following: 238,
     backgroundImage: "img/profile-img/bg/bg-1.jpg",
     faceImage: "img/profile-img/face/face-01.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-    {
+  {
     id: 2,
-    name: "제임스 피어스",
-    company: "@The Athletic",
-    bio: "14년간 리버풀에코에서 일하다 디 에슬레틱으로 이직하여 리버풀 공신력 1티어 유지",
+    name: "소피아 라미레즈",
+    company: "@Google · Product Designer",
+    bio: "대규모 제품 환경에서의 UI 시스템과 협업 중심 디자인 워크플로우를 공유한다.",
     followers: 238,
     following: 238,
     backgroundImage: "img/profile-img/bg/bg-2.jpg",
     faceImage: "img/profile-img/face/face-02.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-    {
+  {
     id: 3,
-    name: "파브르지오  로마노",
-    company: "@caughtoffside",
-    bio: "2020년대부터 축구 이적시장 정보에 관련해서 매우 높은 명성을 얻고 있다.",
+    name: "리암 첸",
+    company: "@프리랜서 3D 아티스트 · 교육자",
+    bio: "Blender와 Cinema 4D 기반의 3D 렌더링을 중심으로  비주얼 중심 디자인 교육을 진행한다.",
     followers: 238,
     following: 238,
     backgroundImage: "img/profile-img/bg/bg-3.jpg",
     faceImage: "img/profile-img/face/face-03.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-    {
+  {
     id: 4,
     name: "제이콥 스테인버그",
     company: "@The Athletic",
@@ -50,35 +50,35 @@ const journalistData = [
     faceImage: "img/profile-img/face/face-04.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-    {
+  {
     id: 5,
-    name: "제임스 더커",
-    company: "@The Athletic",
-    bio: "BBC 스포츠 기자로 약 12년 활동 후 2019년 10월 The Athletic 합류",
+    name: "엠마 요한슨",
+    company: "@Spotify · Senior UX Designer",
+    bio: "데이터 기반 UX 설계와 사용자 경험 개선 사례를 실무 중심으로 전달한다.",
     followers: 238,
     following: 238,
     backgroundImage: "img/profile-img/bg/bg-5.jpg",
     faceImage: "img/profile-img/face/face-05.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-    {
+  {
     id: 6,
-    name: "마크 크리츨리",
-    company: "@The Athletic",
-    bio: "BBC 스포츠 기자로 약 12년 활동 후 2019년 10월 The Athletic 합류",
+    name: "노아 윌리엄스",
+    company: "@Adobe · Design Evangelist",
+    bio: "디자인 툴과 크리에이티브 워크플로우를 주제로 전 세계 디자이너들과 소통하고 있다.",
     followers: 238,
     following: 238,
     backgroundImage: "img/profile-img/bg/bg-1.jpg",
     faceImage: "img/profile-img/face/face-11.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-    {
+  {
     id: 7,
     name: "다르메스 세스",
     company: "@The Athletic",
@@ -89,9 +89,9 @@ const journalistData = [
     faceImage: "img/profile-img/face/face-58.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-    {
+  {
     id: 8,
     name: "데이비드 온스테인",
     company: "@The Athletic",
@@ -102,9 +102,9 @@ const journalistData = [
     faceImage: "img/profile-img/face/face-01.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-    {
+  {
     id: 9,
     name: "제임스 피어스",
     company: "@The Athletic",
@@ -115,9 +115,9 @@ const journalistData = [
     faceImage: "img/profile-img/face/face-02.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-    {
+  {
     id: 10,
     name: "파브르지오  로마노",
     company: "@caughtoffside",
@@ -128,9 +128,9 @@ const journalistData = [
     faceImage: "img/profile-img/face/face-03.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-    {
+  {
     id: 11,
     name: "제이콥 스테인버그",
     company: "@The Athletic",
@@ -141,9 +141,9 @@ const journalistData = [
     faceImage: "img/profile-img/face/face-04.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-    {
+  {
     id: 12,
     name: "제임스 더커",
     company: "@The Athletic",
@@ -154,9 +154,9 @@ const journalistData = [
     faceImage: "img/profile-img/face/face-05.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-    {
+  {
     id: 13,
     name: "마크 크리츨리",
     company: "@The Athletic",
@@ -167,9 +167,9 @@ const journalistData = [
     faceImage: "img/profile-img/face/face-11.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-    {
+  {
     id: 14,
     name: "다르메스 세스",
     company: "@The Athletic",
@@ -180,9 +180,9 @@ const journalistData = [
     faceImage: "img/profile-img/face/face-58.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-    {
+  {
     id: 17,
     name: "데이비드 온스테인",
     company: "@The Athletic",
@@ -193,9 +193,9 @@ const journalistData = [
     faceImage: "img/profile-img/face/face-01.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-    {
+  {
     id: 18,
     name: "제임스 피어스",
     company: "@The Athletic",
@@ -206,9 +206,9 @@ const journalistData = [
     faceImage: "img/profile-img/face/face-02.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-      {
+  {
     id: 19,
     name: "파브르지오  로마노",
     company: "@caughtoffside",
@@ -219,9 +219,9 @@ const journalistData = [
     faceImage: "img/profile-img/face/face-03.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-    {
+  {
     id: 20,
     name: "제이콥 스테인버그",
     company: "@The Athletic",
@@ -232,9 +232,8 @@ const journalistData = [
     faceImage: "img/profile-img/face/face-04.png",
     isVerified: true,
     twitterLink: "#",
-    articlesLink: "#"
+    articlesLink: "#",
   },
-
 ];
 
 // 인증 뱃지 SVG
@@ -257,7 +256,7 @@ function createProfileCard(journalist) {
       <div class="txt-box">
         <span class="name">
           ${journalist.name}
-          ${journalist.isVerified ? verifiedBadgeSVG : ''}
+          ${journalist.isVerified ? verifiedBadgeSVG : ""}
         </span>
         <b class="com">${journalist.company}</b>
         <p class="sub">${journalist.bio}</p>
@@ -282,22 +281,24 @@ function createProfileCard(journalist) {
 
 // 프로필 렌더링 함수
 function renderProfiles() {
-  const wrapper = document.getElementById('journalist-wrapper');
+  const wrapper = document.getElementById("journalist-wrapper");
   if (!wrapper) {
-    console.error('journalist-wrapper 요소를 찾을 수 없습니다.');
+    console.error("journalist-wrapper 요소를 찾을 수 없습니다.");
     return;
   }
-  
-  const html = journalistData.map(journalist => createProfileCard(journalist)).join('');
+
+  const html = journalistData
+    .map((journalist) => createProfileCard(journalist))
+    .join("");
   wrapper.innerHTML = html;
 }
 
 // DOM 로드 시 실행
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   renderProfiles();
 });
 
 // 외부에서 사용할 수 있도록 export
-if (typeof module !== 'undefined' && module.exports) {
+if (typeof module !== "undefined" && module.exports) {
   module.exports = { journalistData, renderProfiles };
 }
