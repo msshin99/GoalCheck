@@ -27,12 +27,11 @@ const newsData = [
   },
   {
     img: "img/news-img/342x192/img-02.jpg",
-    player: "1인 창업 실험노트",
+    player: "AI와 함께하는 기획 자동화 기록",
     time: "방금전",
-    title:
-      "디자인 레퍼런스를 찾는 방식이 달라졌다, AI로 무드보드를 만드는 새로운 흐름",
+    title: "반복 업무를 줄이고 핵심 판단에 집중한 1인 창업자의 실무 사례",
     reporterImg: "img/profile-img/face/face-02.png",
-    reporter: "Moodframe Studio",
+    reporter: "Planwise Corp.",
     trust: 100,
     link: "insights/viewpage.html",
     date: "2025.01.24",
@@ -55,10 +54,9 @@ const newsData = [
   },
   {
     img: "img/news-img/342x192/img-04.jpg",
-    player: "개인 생산성 랩",
+    player: "1인 창업자의 실전",
     time: "방금전",
-    title:
-      "혼자서도 서비스 운영이 가능한 이유, AI로 고객 응대와 운영을 자동화한 사례",
+    title: "아이디어가 문서가 되고, 문서가 실행이 되기까지의 노력을 보인다",
     reporterImg: "img/profile-img/face/face-04.png",
     reporter: "SoloOps",
     trust: 100,
@@ -70,10 +68,9 @@ const newsData = [
 
   {
     img: "img/news-img/342x192/img-05.jpg",
-    player: "개인 생산성 랩",
+    player: "실험 리포트",
     time: "방금전",
-    title:
-      "혼자서도 서비스 운영이 가능한 이유, AI로 고객 응대와 운영을 자동화한 사례",
+    title: "사람의 판단과 AI의 속도를 결합한 기획 워크플로우는 뭐가 있을까",
     reporterImg: "img/profile-img/face/face-05.png",
     reporter: "SoloOps",
     trust: 100,
@@ -85,10 +82,9 @@ const newsData = [
 
   {
     img: "img/news-img/342x192/img-06.jpg",
-    player: "개인 생산성 랩",
+    player: "사업기획서의 구조",
     time: "방금전",
-    title:
-      "혼자서도 서비스 운영이 가능한 이유, AI로 고객 응대와 운영을 자동화한 사례",
+    title: "불필요한 설명을 덜고 핵심만 남기는 기획 정리법을 공유한다",
     reporterImg: "img/profile-img/face/face-06.png",
     reporter: "SoloOps",
     trust: 100,
@@ -100,10 +96,9 @@ const newsData = [
 
   {
     img: "img/news-img/342x192/img-07.jpg",
-    player: "개인 생산성 랩",
+    player: "AI와 나누는 기획",
     time: "방금전",
-    title:
-      "혼자서도 서비스 운영이 가능한 이유, AI로 고객 응대와 운영을 자동화한 사례",
+    title: "아이디어를 명확한 문서로 바꾸는 질문 설계법을 알아보자",
     reporterImg: "img/profile-img/face/face-07.png",
     reporter: "SoloOps",
     trust: 100,

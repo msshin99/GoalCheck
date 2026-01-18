@@ -15,7 +15,7 @@ function getImagePathPrefix() {
 const newsData = [
   {
     id: "오피셜",
-    img: "img/transfer-img/342x192/img-01.jpg",
+    img: "img/transfer-img/342x192/img-30.jpg",
     player: "1인 개발자 노트",
     time: "5분 전",
     title:
@@ -27,10 +27,11 @@ const newsData = [
   },
   {
     id: "거피셜",
-    img: "img/transfer-img/342x192/img-02.jpg",
-    player: "AI 업무 자동화 연구소",
+    img: "img/transfer-img/342x192/img-29.jpg",
+    player: "솔로 개발자 로그",
     time: "5분 전",
-    title: "블로그 기획부터 글 구조 설계까지, AI에게 콘텐츠 전략을 맡겨본 결과",
+    title:
+      "매번 손으로 처리하던 반복 메일을 AI가 대신 응답하도록 구축고객 지원 업무 부담을 크게 줄인 실전 사례",
     trust: 100,
     reporterImg: "img/profile-img/face/face-15.png",
     reporter: "Contentory Studio",
@@ -38,7 +39,7 @@ const newsData = [
   },
   {
     id: "긴급속보",
-    img: "img/transfer-img/342x192/img-03.jpg",
+    img: "img/transfer-img/342x192/img-28.jpg",
     player: "콘텐츠 전략팀",
     time: "5분 전",
     title:
@@ -50,7 +51,7 @@ const newsData = [
   },
   {
     id: "루머",
-    img: "img/transfer-img/342x192/img-04.jpg",
+    img: "img/transfer-img/342x192/img-27.jpg",
     player: "노코드 실험실",
     time: "5분 전",
     title:
@@ -62,12 +63,12 @@ const newsData = [
   },
   {
     id: "오피셜",
-    img: "img/transfer-img/342x192/img-05.jpg",
+    img: "img/transfer-img/342x192/img-26.jpg",
 
-    player: "1인 개발자 노트",
+    player: "개발자 다이어리",
     time: "5분 전",
     title:
-      "반복 이메일 응답을 AI로 자동 처리해 CS 업무 시간을 대폭 줄인 실제 사례",
+      "반복적인 이메일 응답을 자동화 구조로 개선해 운영 부담을 효과적으로 낮춘 실제 사례",
     trust: 100,
     reporterImg: "img/profile-img/face/face-13.png",
     reporter: "ReplyFlow Labs",
@@ -75,10 +76,11 @@ const newsData = [
   },
   {
     id: "거피셜",
-    img: "img/transfer-img/342x192/img-06.jpg",
-    player: "AI 업무 자동화 연구소",
+    img: "img/transfer-img/342x192/img-25.jpg",
+    player: "솔로 빌더 노트",
     time: "5분 전",
-    title: "블로그 기획부터 글 구조 설계까지, AI에게 콘텐츠 전략을 맡겨본 결과",
+    title:
+      "하루에도 수십 통씩 오던 문의 메일을 AI가 대신 처리하 CS 대응 시간을 구조적으로 줄인 경험",
     trust: 100,
     reporterImg: "img/profile-img/face/face-12.png",
     reporter: "Contentory Studio",
@@ -86,7 +88,7 @@ const newsData = [
   },
   {
     id: "긴급속보",
-    img: "img/transfer-img/342x192/img-02.jpg",
+    img: "img/transfer-img/342x192/img-24.jpg",
     player: "콘텐츠 전략팀",
     time: "5분 전",
     title:
@@ -98,11 +100,11 @@ const newsData = [
   },
   {
     id: "루머",
-    img: "img/transfer-img/342x192/img-08.jpg",
-    player: "노코드 실험실",
+    img: "img/transfer-img/342x192/img-23.jpg",
+    player: "1인 개발자 스토리",
     time: "5분 전",
     title:
-      "전환율이 높은 광고 문장은 무엇이 다를까? AI가 분석한 카피 패턴 정리",
+      "반복되는 고객 응대를 AI 자동 답변으로 치환해 운영과 개발에 집중할 수 있게 만든 사례",
     trust: 100,
     reporterImg: "img/profile-img/face/face-09.png",
     reporter: "AdMetric Lab",
@@ -111,10 +113,10 @@ const newsData = [
   {
     id: "오피셜",
     img: "img/transfer-img/342x192/img-22.jpg",
-    player: "1인 개발자 노트",
+    player: "개발자 리포트",
     time: "5분 전",
     title:
-      "반복 이메일 응답을 AI로 자동 처리해 CS 업무 시간을 대폭 줄인 실제 사례",
+      "단순 반복 이메일 응답을 AI 자동 처리로 전환하며 고객 지원 프로세스를 간결하게 만든 실제 기록",
     trust: 100,
     reporterImg: "img/profile-img/face/face-08.png",
     reporter: "ReplyFlow Labs",
@@ -123,10 +125,10 @@ const newsData = [
   {
     id: "오피셜",
     img: "img/transfer-img/342x192/img-21.jpg",
-    player: "1인 개발자 노트",
+    player: "1인 개발자 메모",
     time: "5분 전",
     title:
-      "반복 이메일 응답을 AI로 자동 처리해 CS 업무 시간을 대폭 줄인 실제 사례",
+      "쌓여가던 반복 문의 메일을 AI 응답 시스템으로 대체해 CS 업무 시간을 눈에 띄게 단축한 경험",
     trust: 100,
     reporterImg: "img/profile-img/face/face-08.png",
     reporter: "ReplyFlow Labs",
