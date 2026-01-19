@@ -84,19 +84,6 @@ section.category ul.category-list li .icon-bg img {
   left: 50%;
   top: 50%;
   translate: -50% -50%;
-  width: 44px;
-}
-
-section.category ul.category-list li:nth-child(4) .icon-bg img {
-  width: 56px;
-}
-
-section.category ul.category-list li:nth-child(5) .icon-bg img {
-  width: 32px;
-}
-
-section.category ul.category-list li:nth-child(6) .icon-bg img {
-  width: 38px;
 }
 
 section.category ul.category-list li:hover .icon-bg {
@@ -145,19 +132,6 @@ section.category ul.category-list li .txt span {
   }
 
   section.category ul.category-list li .icon-bg img {
-    width: 32px;
-  }
-
-  section.category ul.category-list li:nth-child(4) .icon-bg img {
-    width: 42px;
-  }
-
-  section.category ul.category-list li:nth-child(5) .icon-bg img {
-    width: 22px;
-  }
-
-  section.category ul.category-list li:nth-child(6) .icon-bg img {
-    width: 30px;
   }
 
   section.category ul.category-list li .txt p {
@@ -196,17 +170,6 @@ section.category ul.category-list li .txt span {
     width: 36px;
   }
 
-  section.category ul.category-list li:nth-child(4) .icon-bg img {
-    width: 48px;
-  }
-
-  section.category ul.category-list li:nth-child(5) .icon-bg img {
-    width: 26px;
-  }
-
-  section.category ul.category-list li:nth-child(6) .icon-bg img {
-    width: 32px;
-  }
 
   section.category ul.category-list li .txt p {
     font-size: 14px;
