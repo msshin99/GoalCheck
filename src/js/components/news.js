@@ -428,7 +428,6 @@ function createNewsItem(item) {
     <div class="swiper-slide item" onclick="location.href='${imgPrefix}${item.link}'" >
       <figure>
         <img src="${imgPrefix}${item.img}" alt="${item.player}">
-        // <span class="icon"><img src="${imgPrefix}${item.moon}" alt=""></span>
       </figure>
       <div class="txt">
         <p class="info">
