@@ -148,7 +148,7 @@ const newsData = [
   },
   {
     id: "거피셜",
-    img: "img/transfer-img/342x192/img-10.jpg",
+    img: "img/transfer-img/342x192/img-30.jpg",
     player: "AI 업무 자동화 연구소",
     time: "5분 전",
     title: "블로그 기획부터 글 구조 설계까지, AI에게 콘텐츠 전략을 맡겨본 결과",
@@ -181,7 +181,7 @@ const newsData = [
   },
   {
     id: "루머",
-    img: "img/transfer-img/342x192/img-11.jpg",
+    img: "img/transfer-img/342x192/img-30.jpg",
     player: "콘텐츠 전략팀",
     time: "5분 전",
     title:
@@ -229,7 +229,7 @@ const newsData = [
   },
   {
     id: "긴급속보",
-    img: "img/transfer-img/342x192/img-04.jpg",
+    img: "img/transfer-img/342x192/img-26.jpg",
     player: "노코드 실험실",
     time: "5분 전",
     title:
@@ -241,7 +241,7 @@ const newsData = [
   },
   {
     id: "긴급속보",
-    img: "img/transfer-img/342x192/img-05.jpg",
+    img: "img/transfer-img/342x192/img-27.jpg",
     player: "노코드 실험실",
     time: "5분 전",
     title:
