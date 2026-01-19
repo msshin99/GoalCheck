@@ -600,9 +600,6 @@ function initMainPage() {
       let sortedData = [...newsData];
 
       switch (buttonText) {
-        case "전체":
-          sortedData = sortByLatest(newsData);
-          break;
         case "최신순":
           sortedData = sortByLatest(newsData);
           break;
