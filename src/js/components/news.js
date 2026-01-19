@@ -600,24 +600,19 @@ function initMainPage() {
       let sortedData = [...newsData];
 
       switch (buttonText) {
-        case "피그마":
+        case "전체":
           sortedData = sortByLatest(newsData);
           break;
-        case "블랜더":
+        case "최신순":
           sortedData = sortByLatest(newsData);
           break;
-        case "일러스트":
+        case "조회순":
           sortedData = sortByLatest(newsData);
           break;
-        case "포토샵":
+        case "추천순":
           sortedData = sortByLatest(newsData);
           break;
-        case "프로토파이":
-          sortedData = sortByLatest(newsData);
-          break;
-        case "제플린":
-          sortedData = sortByViews(newsData);
-          break;
+        
         default:
           sortedData = [...newsData]; // 전체는 기본 순서
       }
