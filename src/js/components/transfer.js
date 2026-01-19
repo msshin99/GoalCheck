@@ -23,7 +23,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-img/face/face-16.png",
     reporter: "ReplyFlow Labs",
-    link: "insights/viewpage.html",
+    link: "",
   },
   {
     id: "거피셜",
@@ -35,7 +35,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-img/face/face-15.png",
     reporter: "Contentory Studio",
-    link: "insights/viewpage.html",
+    link: "",
   },
   {
     id: "긴급속보",
@@ -46,8 +46,8 @@ const newsData = [
       "엑셀 수식 없이도 가능한 업무 자동화, AI로 데이터 정리를 완전히 바꾼 방법",
     trust: 100,
     reporterImg: "img/profile-img/face/face-14.png",
-    reporter: "리버풀 공식 홈페이지",
-    link: "insights/viewpage.html",
+    reporter: "design AB",
+    link: "",
   },
   {
     id: "루머",
@@ -59,7 +59,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-img/face/face-14.png",
     reporter: "AdMetric Lab",
-    link: "insights/viewpage.html",
+    link: "",
   },
   {
     id: "오피셜",
@@ -84,7 +84,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-img/face/face-12.png",
     reporter: "Contentory Studio",
-    link: "insights/viewpage.html",
+    link: "",
   },
   {
     id: "긴급속보",
@@ -95,8 +95,8 @@ const newsData = [
       "엑셀 수식 없이도 가능한 업무 자동화, AI로 데이터 정리를 완전히 바꾼 방법",
     trust: 100,
     reporterImg: "img/profile-img/face/face-10.png",
-    reporter: "리버풀 공식 홈페이지",
-    link: "insights/viewpage.html",
+    reporter: "Pentagram",
+    link: "",
   },
   {
     id: "루머",
@@ -107,8 +107,8 @@ const newsData = [
       "반복되는 고객 응대를 AI 자동 답변으로 치환해 운영과 개발에 집중할 수 있게 만든 사례",
     trust: 100,
     reporterImg: "img/profile-img/face/face-09.png",
-    reporter: "AdMetric Lab",
-    link: "insights/viewpage.html",
+    reporter: "Studio Axis",
+    link: "",
   },
   {
     id: "오피셜",
@@ -119,8 +119,8 @@ const newsData = [
       "단순 반복 이메일 응답을 AI 자동 처리로 전환하며 고객 지원 프로세스를 간결하게 만든 실제 기록",
     trust: 100,
     reporterImg: "img/profile-img/face/face-08.png",
-    reporter: "ReplyFlow Labs",
-    link: "insights/viewpage.html",
+    reporter: "Insight Lab",
+    link: "",
   },
   {
     id: "오피셜",
@@ -132,7 +132,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-img/face/face-08.png",
     reporter: "ReplyFlow Labs",
-    link: "insights/viewpage.html",
+    link: "",
   },
   {
     id: "오피셜",
@@ -143,8 +143,8 @@ const newsData = [
       "반복 이메일 응답을 AI로 자동 처리해 CS 업무 시간을 대폭 줄인 실제 사례",
     trust: 100,
     reporterImg: "img/profile-img/face/face-08.png",
-    reporter: "ReplyFlow Labs",
-    link: "insights/viewpage.html",
+    reporter: "Context Metrics",
+    link: "",
   },
   {
     id: "거피셜",
@@ -154,8 +154,8 @@ const newsData = [
     title: "블로그 기획부터 글 구조 설계까지, AI에게 콘텐츠 전략을 맡겨본 결과",
     trust: 100,
     reporterImg: "img/profile-img/face/face-07.png",
-    reporter: "Contentory Studio",
-    link: "insights/viewpage.html",
+    reporter: "BrandMetric Lab",
+    link: "",
   },
   {
     id: "거피셜",
@@ -165,8 +165,8 @@ const newsData = [
     title: "블로그 기획부터 글 구조 설계까지, AI에게 콘텐츠 전략을 맡겨본 결과",
     trust: 100,
     reporterImg: "img/profile-img/face/face-07.png",
-    reporter: "Contentory Studio",
-    link: "insights/viewpage.html",
+    reporter: "Visual Index",
+    link: "",
   },
   {
     id: "거피셜",
@@ -176,8 +176,8 @@ const newsData = [
     title: "블로그 기획부터 글 구조 설계까지, AI에게 콘텐츠 전략을 맡겨본 결과",
     trust: 100,
     reporterImg: "img/profile-img/face/face-07.png",
-    reporter: "Contentory Studio",
-    link: "insights/viewpage.html",
+    reporter: "Shape & Sense",
+    link: "",
   },
   {
     id: "루머",
@@ -188,8 +188,8 @@ const newsData = [
       "엑셀 수식 없이도 가능한 업무 자동화, AI로 데이터 정리를 완전히 바꾼 방법",
     trust: 100,
     reporterImg: "img/profile-img/face/face-06.png",
-    reporter: "리버풀 공식 홈페이지",
-    link: "insights/viewpage.html",
+    reporter: "UX Metric Studio",
+    link: "",
   },
   {
     id: "오피셜",
@@ -200,8 +200,8 @@ const newsData = [
       "전환율이 높은 광고 문장은 무엇이 다를까? AI가 분석한 카피 패턴 정리",
     trust: 100,
     reporterImg: "img/profile-img/face/face-05.png",
-    reporter: "AdMetric Lab",
-    link: "insights/viewpage.html",
+    reporter: "Experience Metric",
+    link: "",
   },
   {
     id: "거피셜",
@@ -212,8 +212,8 @@ const newsData = [
       "전환율이 높은 광고 문장은 무엇이 다를까? AI가 분석한 카피 패턴 정리",
     trust: 100,
     reporterImg: "img/profile-img/face/face-04.png",
-    reporter: "AdMetric Lab",
-    link: "insights/viewpage.html",
+    reporter: "Northscale Studio",
+    link: "",
   },
   {
     id: "긴급속보",
@@ -225,7 +225,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-img/face/face-03.png",
     reporter: "AdMetric Lab",
-    link: "insights/viewpage.html",
+    link: "",
   },
   {
     id: "긴급속보",
@@ -237,7 +237,7 @@ const newsData = [
     trust: 100,
     reporterImg: "img/profile-img/face/face-03.png",
     reporter: "AdMetric Lab",
-    link: "insights/viewpage.html",
+    link: "",
   },
   {
     id: "긴급속보",
@@ -248,8 +248,8 @@ const newsData = [
       "전환율이 높은 광고 문장은 무엇이 다를까? AI가 분석한 카피 패턴 정리",
     trust: 100,
     reporterImg: "img/profile-img/face/face-03.png",
-    reporter: "AdMetric Lab",
-    link: "insights/viewpage.html",
+    reporter: "Studio Axis",
+    link: "",
   },
   {
     id: "긴급속보",
@@ -260,8 +260,8 @@ const newsData = [
       "전환율이 높은 광고 문장은 무엇이 다를까? AI가 분석한 카피 패턴 정리",
     trust: 100,
     reporterImg: "img/profile-img/face/face-02.png",
-    reporter: "AdMetric Lab",
-    link: "insights/viewpage.html",
+    reporter: "Studio Axis",
+    link: "",
   },
   {
     id: "루머",
@@ -272,8 +272,8 @@ const newsData = [
       "전환율이 높은 광고 문장은 무엇이 다를까? AI가 분석한 카피 패턴 정리",
     trust: 100,
     reporterImg: "img/profile-img/face/face-01.png",
-    reporter: "AdMetric Lab",
-    link: "insights/viewpage.html",
+    reporter: "Blue Ratio",
+    link: "",
   },
   {
     id: "루머",
@@ -284,8 +284,8 @@ const newsData = [
       "전환율이 높은 광고 문장은 무엇이 다를까? AI가 분석한 카피 패턴 정리",
     trust: 100,
     reporterImg: "img/profile-img/face/face-01.png",
-    reporter: "AdMetric Lab",
-    link: "insights/viewpage.html",
+    reporter: "Visual Index",
+    link: "",
   },
   {
     id: "루머",
@@ -296,8 +296,8 @@ const newsData = [
       "전환율이 높은 광고 문장은 무엇이 다를까? AI가 분석한 카피 패턴 정리",
     trust: 100,
     reporterImg: "img/profile-img/face/face-01.png",
-    reporter: "AdMetric Lab",
-    link: "insights/viewpage.html",
+    reporter: "Shape & Sense",
+    link: "",
   },
 
   // {
