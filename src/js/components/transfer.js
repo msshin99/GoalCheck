@@ -842,7 +842,6 @@ function renderNewsList(data) {
     <div class="swiper-slide item" onclick="location.href='${imgPrefix}${link}'" >
       <figure>
         <img src="${imgPrefix}${img}" alt="${player}" />
-        <span class="icon"><img src="${imgPrefix}${moon}" alt=""></span>
       </figure>
       <div class="txt">
         <p class="info">
